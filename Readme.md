@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Дмитрий Тихонов](https://up.htmlacademy.ru/adaptive/22/user/1697997).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
