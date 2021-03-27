@@ -6,9 +6,11 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="" width="" height="" alt="" />
-      </a>
+      <div>
+        <a class="page-header__logo">
+          <img src="" width="" height="" alt="" />
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -26,14 +28,14 @@
             </li>
           </ul>
         </div>
-        <h1 class="">Функциональное питание для котов</h1>
-        <p>Занялся собой? Займись котом!</p>
+        <h1 class="page-header__title">Функциональное питание для котов</h1>
+        <p class="page-header__text">Занялся собой? Займись котом!</p>
         <a class="button" href="#">Подобрать программу</a>
       </nav>
     </header>
     <main class="page-main">
       <section class="program-selection">
-        <h2 class="program-selection__title visually-hidden">
+        <h2 class="visually-hidden">
           Выбор программы
         </h2>
         <div class="program-selection__wrapper">
@@ -102,16 +104,16 @@
           </p>
           <div class="example__list">
             <div class="example__item">
-              <dt class="example__number">5 кг</dt>
-              <dd class="example__description">снижение веса</dd>
+              <b class="example__unit">5 кг</b>
+              <p class="example__desc">Снижение веса</p>
             </div>
             <div class="example__item">
-              <dt class="example__number">60 дней</dt>
-              <dd class="example__description">затрачено времени</dd>
+              <b class="example__unit">60 Дней</b>
+              <p class="example__desc">Затрачено времени</p>
             </div>
-            <p class="example__price">Затраты на питание:15 000 руб.</p>
           </div>
-          <div example__sample>
+          <p class="example__price"><span>Затраты на питание:</span><span>15 000 Руб.</span></p>
+          <div class="example__sample">
             <img src="" width="" height="" alt="">
             <div class="example__filter">
               <b>Было</b>
@@ -136,6 +138,9 @@
           </p>
         </div>
         <div class="page-footer__map">
+        </div>
+        <div class="page-footer__logo">
+
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
