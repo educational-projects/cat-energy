@@ -6,22 +6,20 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div>
         <a class="page-header__logo">
           <img src="" width="" height="" alt="" />
         </a>
-      </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div>
+      <nav class="page-header__main-nav main-nav">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="index.html"> Главная </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#"> Каталог продукции </a>
+              <a class="main-nav__link"> Каталог продукции </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html"> Подбор программы </a>
@@ -47,28 +45,28 @@
                 <tbody>
                   <tr>
                     <td class="product__naming">Масса</td>
-                    <td class="product__value">500 г</td>
+                    <td class="product__naming">500 г</td>
                   </tr>
                   <tr>
                     <td class="product__naming">Вкус</td>
-                    <td class="product__value">Курица</td>
+                    <td class="product__naming">Курица</td>
                   </tr>
                   <tr>
                     <td class="product__naming">Цена</td>
-                    <td class="product__value">700 Р.</td>
+                    <td class="product__naming">700 Р.</td>
                   </tr>
                 </tbody>
               </table>
               <a class="button" href="#">Заказать</a>
             </li>
+            <li class="product-more">
+              <h3 class="product-more__title">Показать еще 100500 товаров</h3>
+              <p class="product-more__text">
+                На самом деле вкусов гораздо больше!
+              </p>
+              <a class="button" href="#">Показать все</a>
+            </li>
           </ul>
-          <div class="product-more">
-            <h3 class="product-more__title">Показать еще 100500 товаров</h3>
-            <p class="product-more__text">
-              На самом деле вкусов гораздо больше!
-            </p>
-            <a class="button" href="#">Показать все</a>
-          </div>
         </div>
       </section>
       <section class="additional-products">
