@@ -7,11 +7,26 @@
   </head>
   <body class="page__body">
     <header class="page-header">
+      <div class="page-header__wrapper">
         <a class="page-header__logo">
-          <img src="" width="" height="" alt="" />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/logo/logo-desktop.svg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/logo/logo-tablet.svg"
+            />
+            <img
+              src="img/logo/logo-mobile.svg"
+              width="190"
+              height="38"
+              alt="Логотип магазина Cat energy"
+            />
+          </picture>
         </a>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        <nav class="page-header__nav main-nav">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -20,14 +35,16 @@
               <a class="main-nav__link" href="index.html"> Главная </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link"> Каталог продукции </a>
+              <a class="main-nav__link">
+                Каталог продукции
+              </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html"> Подбор программы </a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="page__main">
@@ -45,16 +62,16 @@
               <table class="product__info">
                 <tbody>
                   <tr>
-                    <td class="product__naming">Масса</td>
-                    <td class="product__naming">500 г</td>
+                    <td>Масса</td>
+                    <td>500 г</td>
                   </tr>
                   <tr>
-                    <td class="product__naming">Вкус</td>
-                    <td class="product__naming">Курица</td>
+                    <td>Вкус</td>
+                    <td>Курица</td>
                   </tr>
                   <tr>
-                    <td class="product__naming">Цена</td>
-                    <td class="product__naming">700 Р.</td>
+                    <td>Цена</td>
+                    <td>700 Р.</td>
                   </tr>
                 </tbody>
               </table>
