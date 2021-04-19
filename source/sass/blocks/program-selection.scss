@@ -1,0 +1,38 @@
+.program-selection__wrapper {
+  @include container-mob;
+
+  @media (min-width: $tablet-width) {
+    @include container-tabl;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desc;
+  }
+}
+
+.program-selection__list {
+  @include reset;
+  list-style: none;
+}
+
+.program-selection__item {
+  background-color: #f2f2f2;
+}
+
+.program-selection__text {
+  margin: 0;
+
+  @include arial-text-mob;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.program-selection__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+
+  @include font-weight-normal;
+  font-size: 24px;
+  line-height: 37px;
+}

@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="page-body">
+  <body class="page__body">
     <header class="page-header">
-      <div>
-        <a class="page-header__logo">
-          <img src="" width="" height="" alt="" />
-        </a>
-      </div>
+      <a class="page-header__logo">
+        <img src="" width="" height="" alt="" />
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -21,16 +20,18 @@
               <a class="main-nav__link" href="index.html"> Главная </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html"> Каталог продукции </a>
+              <a class="main-nav__link" href="catalog.html">
+                Каталог продукции
+              </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#"> Подбор программы </a>
+              <a class="main-nav__link"> Подбор программы </a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page__main">
       <div class="block-title">
         <div class="block-title__wrapper">
           <h1 class="block-title__title">Подбор программы</h1>
@@ -131,7 +132,7 @@
               <div class="comment__item">
                 <label for="comment-field">Текст письма:</label>
                 <textarea
-                  class="""
+                  class=""
                   name="Повадки кота"
                   id="comment-field"
                   placeholder="Расскажите обо всех повадках кота"
@@ -142,35 +143,39 @@
               <ul class="additional__list">
                 <li class="additional__item">
                   <input
-                  id="sweetener"
-                  type="checkbox"
-                  name="Дополнительно"
-                  value="Cахарозаменитель"
-                  checked>
+                    id="sweetener"
+                    type="checkbox"
+                    name="Дополнительно"
+                    value="Cахарозаменитель"
+                    checked
+                  />
                   <label for="sweetener">Сахарозаменитель</label>
                 </li>
                 <li class="additional__item">
                   <input
-                  id="drinking-water"
-                  type="checkbox"
-                  name="Дополнительно"
-                  value="питьевая вода">
+                    id="drinking-water"
+                    type="checkbox"
+                    name="Дополнительно"
+                    value="питьевая вода"
+                  />
                   <label for="drinking-water">Питьевая вода</label>
                 </li>
                 <li class="additional__item">
                   <input
-                  id="milk"
-                  type="checkbox"
-                  name="Дополнительно"
-                  value="Молоко">
+                    id="milk"
+                    type="checkbox"
+                    name="Дополнительно"
+                    value="Молоко"
+                  />
                   <label for="milk">Молоко</label>
                 </li>
                 <li class="additional__item">
                   <input
-                  id="vitamins"
-                  type="checkbox"
-                  name="Дополнительно"
-                  value="Витамины">
+                    id="vitamins"
+                    type="checkbox"
+                    name="Дополнительно"
+                    value="Витамины"
+                  />
                   <label for="vitamins">Витамины</label>
                 </li>
               </ul>
@@ -182,21 +187,17 @@
       </div>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page__footer">
       <h2 class="visually-hidden">Контактная информация</h2>
       <div class="page-footer__wrapper">
         <div class="page-footer__address address">
-          <b class="address__title">
-            Приглашаем к сотрудничеству дилеров!
-          </b>
+          <b class="address__title"> Приглашаем к сотрудничеству дилеров! </b>
           <p class="address__text">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
         </div>
-        <div class="page-footer__map">
-        </div>
-        <div class="page-footer__logo">
-        </div>
+        <div class="page-footer__map"></div>
+        <div class="page-footer__logo"></div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

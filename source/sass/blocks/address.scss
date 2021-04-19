@@ -1,0 +1,27 @@
+.address__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include container-mob;
+
+  @media (min-width: $tablet-width) {
+    @include container-tabl;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desc;
+  }
+}
+
+.address__title {
+  @include font-weight-normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.address__text {
+  margin: 0;
+
+  @include arial-text-mob;
+  line-height: 20px;
+}
