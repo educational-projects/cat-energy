@@ -30,6 +30,7 @@ const server = (done) => {
     server: {
       baseDir: 'source'
     },
+    browser: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
     cors: true,
     notify: false,
     ui: false,

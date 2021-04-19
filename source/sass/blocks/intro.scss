@@ -1,0 +1,48 @@
+.intro::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 302px;
+  background-image: url("../../img/intro/index-intro-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 302px;
+  background-color: rgba(104, 183, 56, 0.85);
+  z-index: -1;
+}
+
+.intro__wrapper {
+  @include container-mob;
+
+  @media (min-width: $tablet-width) {
+    @include container-tabl;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desc;
+  }
+}
+
+.intro__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 36px;
+
+  @include font-weight-normal;
+  text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    color: #ffffff;
+  }
+}
+
+.intro__text {
+  margin: 0;
+  margin-bottom: 29px;
+  text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    color: #ffffff;
+  }
+}
+

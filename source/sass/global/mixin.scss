@@ -1,0 +1,33 @@
+@mixin container-mob {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin container-tabl {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@mixin container-desc {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 110px;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin arial-text-mob {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+@mixin font-weight-normal {
+  font-weight: 400;
+}

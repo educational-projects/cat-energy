@@ -1,0 +1,58 @@
+.example {
+  background-color: #eaeaea;
+}
+
+.example__wrapper {
+  @include container-mob;
+
+  @media (min-width: $tablet-width) {
+    @include container-tabl;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desc;
+  }
+}
+
+.example__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+
+  @include font-weight-normal;
+}
+
+.example__text {
+  @include arial-text-mob;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item {
+  position: relative;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 124px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.example__unit {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.example__desc {
+  position: absolute;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  top: 47px;
+  left: 21px;
+  margin-right: 20px;
+  background-color: #eaeaea;
+}
