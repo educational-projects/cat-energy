@@ -1,0 +1,35 @@
+.additional-products__wrapper {
+  @include container;
+}
+
+.additional-products__wrap {
+  @include desctop {
+    display: grid;
+    grid-template-columns: 1fr 289px;
+  }
+}
+
+.additional-products__list {
+  @include reset;
+  list-style: none;
+}
+
+.additional-products__bonus {
+  min-width: 289px;
+  min-height: 280px;
+  background-image: url("../../img/additional-products/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 280px;
+
+  @include tablet {
+    min-height: 200px;
+    background-image: url("../../img/additional-products/gift-photo-tablet@1x.jpg");
+    background-size: 100% 200px;
+  }
+
+  @include desctop {
+    min-height: 289px;
+    background-image: url("../../img/additional-products/gift-photo-desktop@1x.jpg");
+    background-size: 100% 289px;
+  }
+}

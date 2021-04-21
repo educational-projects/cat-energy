@@ -1,0 +1,17 @@
+.product__wrapper {
+  @include container;
+}
+
+.product__list {
+  @include reset;
+  list-style: none;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desctop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

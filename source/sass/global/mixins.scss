@@ -31,3 +31,29 @@
 @mixin font-weight-normal {
   font-weight: 400;
 }
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desctop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include tablet {
+    padding: 0 30px;
+  }
+
+  @include desctop {
+    padding: 0 110px;
+  }
+}

@@ -1,16 +1,7 @@
 .address__wrapper {
+  @include container;
   display: flex;
   justify-content: space-between;
-
-  @include container-mob;
-
-  @media (min-width: $tablet-width) {
-    @include container-tabl;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include container-desc;
-  }
 }
 
 .address__title {

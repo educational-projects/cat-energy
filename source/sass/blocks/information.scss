@@ -1,13 +1,5 @@
 .information__wrapper {
-  @include container-mob;
-
-  @media (min-width: $tablet-width) {
-    @include container-tabl;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include container-desc;
-  }
+  @include container;
 }
 
 .information__title {
