@@ -1,18 +1,14 @@
+.page-header__logo {
+  margin-top: 12px;
+}
+
 .page-header__wrapper {
-  @include container-mob;
+  @include container;
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet-width) {
-    @include container-tabl;
+  @include tablet {
+    display: flex;
     flex-direction: row;
   }
-
-  @media (min-width: $desktop-width) {
-    @include container-desc;
-  }
-}
-
-.page-header__logo {
-  margin-top: 12px;
 }
