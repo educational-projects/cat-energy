@@ -3,7 +3,7 @@
 }
 
 .program-selection__list {
-  @include reset;
+  @include reset-indents;
   list-style: none;
 }
 

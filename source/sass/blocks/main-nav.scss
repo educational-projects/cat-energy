@@ -4,6 +4,11 @@
   list-style: none;
   text-align: center;
   text-transform: uppercase;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .main-nav__link {
@@ -29,15 +34,29 @@
     background-color: black;
     box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
   }
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .main-nav__item {
-  border-bottom: 1px solid #e6e6e6;
-  padding-bottom: 24px;
-  margin-bottom: 26px;
+  @include mobile-only {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 24px;
+    margin-bottom: 26px;
 
-  &:first-child {
-    border-top: 1px solid #e6e6e6;
-    padding-top: 22px;
+    &:first-child {
+      border-top: 1px solid #e6e6e6;
+      padding-top: 22px;
+    }
+  }
+
+  @include tablet {
+    margin-right: 34px;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }

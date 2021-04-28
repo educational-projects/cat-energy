@@ -10,13 +10,13 @@
   padding: 0 30px;
 }
 
-@mixin container-desc {
+@mixin container-desk {
   width: 100%;
   margin: 0 auto;
   padding: 0 110px;
 }
 
-@mixin reset {
+@mixin reset-indents {
   margin: 0;
   padding: 0;
 }
@@ -25,6 +25,13 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  color: #444444;
+}
+
+@mixin arial-text-catalog {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
   color: #444444;
 }
 
@@ -38,7 +45,7 @@
   }
 }
 
-@mixin desctop {
+@mixin desktop {
   @media (min-width: 1440px) {
     @content;
   }
@@ -53,7 +60,28 @@
     padding: 0 30px;
   }
 
-  @include desctop {
+  @include desktop {
     padding: 0 110px;
+  }
+}
+
+@mixin button {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #68B738;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 100%;
+}
+
+@mixin mobile-only {
+  @media (max-width: 767px) {
+    @content;
   }
 }

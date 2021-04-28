@@ -1,0 +1,23 @@
+.catalog-block__wrapper {
+  @include container;
+}
+
+.catalog-block__title {
+  @include mobile-only {
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 41px;
+  }
+
+
+  @include reset-indents;
+
+  @include font-weight-normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

@@ -33,10 +33,10 @@
       </nav>
     </header>
     <main class="page__main">
-      <div class="block-title">
-        <div class="block-title__wrapper">
-          <h1 class="block-title__title">Подбор программы</h1>
-          <p class="block-title__text">
+      <div class="form-block">
+        <div class="form-block__wrapper">
+          <h1 class="form-block__title">Подбор программы</h1>
+          <p class="form-block__text">
             Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
         </div>
@@ -106,7 +106,7 @@
               </ul>
             </fieldset>
             <fieldset class="personal-data__contacts contacts">
-              <h3 class="personal-data__subtitle">
+              <h3 class="contacts__title">
                 Персональные данные (владельца кота)
               </h3>
               <div class="contacts__item">
@@ -129,9 +129,9 @@
               </div>
             </fieldset>
             <fieldset class="personal-data__comment comment">
-              <h3 class="personal-data__subtitle">Комментарий</h3>
+              <h3 class="comment__title">Комментарий</h3>
               <div class="comment__item">
-                <label for="comment-field">Текст письма:</label>
+                <label for="comment-field" aria-label="Текст пистма"></label>
                 <textarea
                   class=""
                   name="Повадки кота"
@@ -181,7 +181,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">Отправить заявку</button>
+            <button class="personal-data__button" type="submit">Отправить заявку</button>
             <p class="personal-data__text">* — Обязательные поля</p>
           </div>
         </form>

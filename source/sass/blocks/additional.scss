@@ -1,0 +1,20 @@
+.additional {
+  @include reset-indents;
+  border: none;
+}
+
+.additional__list {
+  @include reset-indents;
+  list-style: none;
+}
+
+.additional__item {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
