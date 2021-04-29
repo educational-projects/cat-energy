@@ -5,6 +5,12 @@
 .program-selection__list {
   @include reset-indents;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .program-selection__item {
@@ -27,4 +33,16 @@
   @include font-weight-normal;
   font-size: 24px;
   line-height: 37px;
+}
+
+.program-selection__button {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -15,6 +15,18 @@
   font-weight: 500;
   color: $basic_black;
   text-decoration: none;
+
+  @include tablet {
+    @include font-weight-normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
 }
 
 .main-nav__toggle {

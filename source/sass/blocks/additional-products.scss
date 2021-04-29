@@ -2,7 +2,7 @@
   @include container;
 }
 
-.additional-products__wrap {
+.additional-products__content {
   @include desktop {
     display: grid;
     grid-template-columns: 1fr 289px;

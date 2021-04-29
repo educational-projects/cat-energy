@@ -12,6 +12,17 @@
 .information__list {
   @include reset-indents;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr)
+  }
 }
 
 .information__text {
