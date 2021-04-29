@@ -8,8 +8,23 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="" width="" height="" alt="" />
+      <a href="index.html" class="page-header__logo">
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="img/logo/logo-desktop.svg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/logo/logo-tablet.svg"
+          />
+          <img
+            src="img/logo/logo-mobile.svg"
+            width="190"
+            height="38"
+            alt="Логотип магазина Cat energy"
+          />
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
