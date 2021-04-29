@@ -58,10 +58,11 @@
 }
 
 .example__button {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   border: none;
   font-size: 16px;
   line-height: 20px;
+
   @include font-weight-normal;
   color: #000000;
   background-color: #eaeaea;
