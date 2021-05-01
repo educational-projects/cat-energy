@@ -1,6 +1,12 @@
 .program {
   @include reset-indents;
   border: none;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @include tablet {
+    border: 1px solid #d9d9d9;
+  }
 }
 
 input {
@@ -16,6 +22,7 @@ input {
   font-size: 16px;
   line-height: 18px;
   color: #222222;
+  text-transform: uppercase;
 
   @include tablet {
     font-size: 20px;

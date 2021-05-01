@@ -7,10 +7,42 @@
   border: none;
 }
 
+.personal-data__title {
+  position: relative;
+}
+
+.personal-data__title::after {
+  position: absolute;
+  top: 16px;
+  left: 160px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #68b738;
+}
+
 .personal-data__item {
+  display: flex;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.personal-data__item input {
+  font-family: "Oswald", sans-serif;
+  border: 1px solid #e7e7e7;
+  height: 45px;
+  width: 100%;
+  text-transform: uppercase;
+  color: #444444;
+  font-size: 16px;
+  line-height: 18px;
 
   @include tablet {
     font-size: 20px;
@@ -27,6 +59,7 @@
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+  text-align: center;
 
   @include tablet {
     font-size: 16px;
