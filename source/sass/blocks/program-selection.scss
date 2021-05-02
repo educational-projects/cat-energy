@@ -14,11 +14,15 @@
 }
 
 .program-selection__item {
+  position: relative;
   background-color: #f2f2f2;
+  margin-bottom: 20px;
+  padding-bottom: 22px;
 }
 
 .program-selection__text {
-  margin: 0;
+  margin: 0 0 15px 20px;
+  padding-right: 20px;
 
   @include arial-text-mob;
   padding-bottom: 23px;
@@ -26,13 +30,23 @@
 }
 
 .program-selection__title {
-  text-align: center;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 29px 91px;
 
   @include font-weight-normal;
   font-size: 24px;
   line-height: 37px;
+}
+
+.program-selection__title::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 22px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
 }
 
 .program-selection__button {
@@ -40,6 +54,9 @@
   color: #000000;
   font-size: 16px;
   line-height: 16px;
+  margin-left: 20px;
+  text-transform: uppercase;
+
 
   @include tablet {
     font-size: 20px;

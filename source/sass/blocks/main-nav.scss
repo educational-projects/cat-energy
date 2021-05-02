@@ -61,11 +61,15 @@
   @include mobile-only {
     border-bottom: 1px solid #e6e6e6;
     padding-bottom: 24px;
-    margin-bottom: 26px;
+    margin-bottom: 21px;
 
     &:first-child {
       border-top: 1px solid #e6e6e6;
       padding-top: 22px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 

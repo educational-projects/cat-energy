@@ -1,13 +1,8 @@
-.intro::before {
-  content: "";
-  position: absolute;
+.intro {
   width: 100%;
-  min-height: 302px;
-  background-image: url("../img/intro/index-background-mobile@1x.jpg");
+  background-image: url("../img/intro/test.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(104, 183, 56, 0.85);
-  z-index: -1;
+  background-size: contain;
 }
 
 .intro__wrapper {
@@ -17,6 +12,7 @@
 .intro__title {
   margin: 0;
   margin-bottom: 25px;
+  padding-top: 27px;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
@@ -37,6 +33,7 @@
 .intro__text {
   margin: 0;
   margin-bottom: 29px;
+  text-transform: uppercase;
 
   @include mobile-only {
     color: #ffffff;
@@ -48,4 +45,5 @@
 
 .intro__button {
   @include button;
+  margin-bottom: 22px;
 }
