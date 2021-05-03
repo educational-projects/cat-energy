@@ -5,7 +5,7 @@
   height: 302px;
   background-image: url("../img/intro/test.png");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   z-index: -1;
 
   @include tablet {
@@ -54,7 +54,7 @@
 .intro__image {
   @include tablet {
     width: 709px;
-    height: 609px
+    height: 609px;
   }
 }
 
