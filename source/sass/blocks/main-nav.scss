@@ -35,11 +35,10 @@
 }
 
 .main-nav__toggle {
-  width: 40px;
-  height: 35px;
   display: block;
   border: none;
   background-color: white;
+  outline: none;
 
   &::before {
     content: "";
@@ -50,6 +49,7 @@
     height: 2px;
     background-color: black;
     box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+    cursor: pointer;
   }
 
   @include tablet {
@@ -61,7 +61,7 @@
   @include mobile-only {
     border-bottom: 1px solid #e6e6e6;
     padding-bottom: 24px;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 
     &:first-child {
       border-top: 1px solid #e6e6e6;

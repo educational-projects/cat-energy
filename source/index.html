@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="page__body">
+  <body class="page__body no-js">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
@@ -66,7 +66,7 @@
                 img/intro/index-can-tablet@1x.jpg 1x,
                 img/intro/index-can-tablet@2x.jpg 2x
               ">
-            <img
+            <img class="intro__image"
               src="img/intro/index-can-mobile@1x.png"
               srcset="img/intro/index-can-mobile@2x.png 2x"
               width="280"
@@ -82,8 +82,8 @@
         <div class="program-selection__wrapper">
           <ul class="program-selection__list">
             <li class="program-selection__item">
-              <img src="" width="" height="" alt="" />
-              <h3 class="program-selection__title">Похудение</h3>
+                <div class="program-selection__icon"></div>
+                <h3 class="program-selection__title">Похудение</h3>
               <p class="program-selection__text">
                 Ваш кот весит больше собаки и почти утратил способность лазить
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
@@ -92,7 +92,7 @@
               <a class="program-selection__button" href="#">Каталог slim</a>
             </li>
             <li class="program-selection__item">
-              <img src="" width="" height="" alt="" />
+              <div class="program-selection__icon"></div>
               <h3 class="program-selection__title">Набор массы</h3>
               <p class="program-selection__text">
                 Заработать авторитет среди дворовых котор и даже собак? Серия
@@ -108,24 +108,28 @@
           <h3 class="information__title">Как это работает</h3>
           <ul class="information__list">
             <li class="information__item information__item--natural">
+              <div class="information__icon"></div>
               <p class="information__text">
                 Функциональное питание содержит только полезные питательные
                 вещества.
               </p>
             </li>
             <li class="information__item information__item--light">
+              <div class="information__icon"></div>
               <p class="information__text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и
                 готово.
               </p>
             </li>
             <li class="information__item information__item--replacement">
+              <div class="information__icon"></div>
               <p class="information__text">
                 Замените один-два приема обычной еды на наше Функциональное
                 питание.
               </p>
             </li>
             <li class="information__item information__item--fast">
+              <div class="information__icon"></div>
               <p class="information__text">
                 уже через месяц наслаждайстесь изменениями к лучшему вашего
                 питомца!
@@ -268,4 +272,12 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    var x = document.querySelector(".no-js");
+
+    if (x) {
+      x.classList.remove("no-js");
+    }
+  </script>
 </html>
