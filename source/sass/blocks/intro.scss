@@ -3,11 +3,14 @@
   position: absolute;
   width: 100%;
   height: 302px;
-  background-image: url("../../img/intro/index-intro-bg.png");
+  background-image: url("../img/intro/test.png");
   background-repeat: no-repeat;
-  background-size: 100% 302px;
-  background-color: rgba(104, 183, 56, 0.85);
+  background-size: cover;
   z-index: -1;
+
+  @include tablet {
+    background-image: none;
+  }
 }
 
 .intro__wrapper {
@@ -17,23 +20,45 @@
 .intro__title {
   margin: 0;
   margin-bottom: 25px;
+  padding-top: 27px;
   font-size: 36px;
   line-height: 36px;
+  color: #000000;
 
   @include font-weight-normal;
-  text-align: center;
 
-  @media (max-width: $mobile-width-only) {
+  @include mobile-only {
     color: #ffffff;
+    text-align: center;
+  }
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
 .intro__text {
   margin: 0;
-  margin-bottom: 29px;
-  text-align: center;
+  margin-bottom: 27px;
+  text-transform: uppercase;
 
-  @media (max-width: $mobile-width-only) {
+  @include mobile-only {
     color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
   }
+}
+
+.intro__image {
+  @include tablet {
+    width: 709px;
+    height: 609px;
+  }
+}
+
+.intro__button {
+  @include button;
+  margin-bottom: 22px;
 }

@@ -1,0 +1,42 @@
+.additional {
+  @include reset-indents;
+  border: none;
+}
+
+.additional__title {
+  @include font-weight-normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.additional__list {
+  @include reset-indents;
+  list-style: none;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.additional__item {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

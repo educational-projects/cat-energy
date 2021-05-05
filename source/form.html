@@ -8,35 +8,48 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="" width="" height="" alt="" />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div>
+      <div class="page-header__wrapper">
+        <a href="index.html" class="page-header__logo">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/logo/logo-desktop.svg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/logo/logo-tablet.svg"
+            />
+            <img
+              src="img/logo/logo-mobile.svg"
+              width="190"
+              height="38"
+              alt="Логотип магазина Cat energy"
+            />
+          </picture>
+        </a>
+        <nav class="page-header__nav main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="index.html"> Главная </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
-                Каталог продукции
-              </a>
+              <a class="main-nav__link" href="catalog.html"> Каталог продукции </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link"> Подбор программы </a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="page__main">
-      <div class="block-title">
-        <div class="block-title__wrapper">
-          <h1 class="block-title__title">Подбор программы</h1>
-          <p class="block-title__text">
+      <div class="form-block">
+        <div class="form-block__wrapper">
+          <h1 class="form-block__title">Подбор программы</h1>
+          <p class="form-block__text">
             Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
         </div>
@@ -106,7 +119,7 @@
               </ul>
             </fieldset>
             <fieldset class="personal-data__contacts contacts">
-              <h3 class="personal-data__subtitle">
+              <h3 class="personal-data__title contacts__title">
                 Персональные данные (владельца кота)
               </h3>
               <div class="contacts__item">
@@ -129,9 +142,9 @@
               </div>
             </fieldset>
             <fieldset class="personal-data__comment comment">
-              <h3 class="personal-data__subtitle">Комментарий</h3>
+              <h3 class="personal-data__title comment__title">Комментарий</h3>
               <div class="comment__item">
-                <label for="comment-field">Текст письма:</label>
+                <label for="comment-field" aria-label="Текст пистма"></label>
                 <textarea
                   class=""
                   name="Повадки кота"
@@ -141,6 +154,7 @@
               </div>
             </fieldset>
             <fieldset class="personal-data__additional additional">
+              <h3 class="personal-data__title additional__title">Дополнительно</h3>
               <ul class="additional__list">
                 <li class="additional__item">
                   <input
@@ -181,7 +195,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">Отправить заявку</button>
+            <button class="personal-data__button" type="submit">Отправить заявку</button>
             <p class="personal-data__text">* — Обязательные поля</p>
           </div>
         </form>

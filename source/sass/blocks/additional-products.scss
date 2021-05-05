@@ -2,34 +2,80 @@
   @include container;
 }
 
-.additional-products__wrap {
-  @include desctop {
+.additional-products__content {
+  @include desktop {
     display: grid;
     grid-template-columns: 1fr 289px;
   }
 }
 
+.additional-products__title {
+  @include reset-indents;
+  font-size: 24px;
+  line-height: 24px;
+
+  @include font-weight-normal;
+  color: #000000;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 .additional-products__list {
-  @include reset;
+  @include reset-indents;
   list-style: none;
+}
+
+.additional-products__name {
+  @include reset-indents;
+  text-transform: uppercase;
+
+  @include font-weight-normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+td {
+  @include arial-text-catalog;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .additional-products__bonus {
   min-width: 289px;
   min-height: 280px;
-  background-image: url("../../img/additional-products/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/additional-products/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% 280px;
 
   @include tablet {
     min-height: 200px;
-    background-image: url("../../img/additional-products/gift-photo-tablet@1x.jpg");
+    background-image: url("../img/additional-products/gift-photo-tablet@1x.jpg");
     background-size: 100% 200px;
   }
 
-  @include desctop {
+  @include desktop {
     min-height: 289px;
-    background-image: url("../../img/additional-products/gift-photo-desktop@1x.jpg");
+    background-image: url("../img/additional-products/gift-photo-desktop@1x.jpg");
     background-size: 100% 289px;
   }
+}
+
+.additional-products__bonus-text {
+  @include arial-text-catalog;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.additional-products__button {
+  @include button;
 }

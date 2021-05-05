@@ -1,14 +1,16 @@
-.page-header__logo {
-  margin-top: 12px;
-}
-
 .page-header__wrapper {
-  @include container;
   display: flex;
   flex-direction: column;
 
   @include tablet {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
+}
+
+.page-header__logo {
+  padding: 0 20px;
+  margin-top: 12px;
+  margin-bottom: 14px;
 }

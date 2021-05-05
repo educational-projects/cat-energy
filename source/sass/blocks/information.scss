@@ -3,15 +3,39 @@
 }
 
 .information__title {
+  @include reset-indents;
   font-size: 36px;
   line-height: 40px;
+  margin: 7px 0 26px 0;
 
   @include font-weight-normal;
 }
 
 .information__list {
-  @include reset;
+  @include reset-indents;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.information__icon {
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+
+  @include tablet {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .information__text {

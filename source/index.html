@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="page__body">
+  <body class="page__body no-js">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
@@ -33,15 +33,15 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link"> Главная </a>
+              <a class="main-nav__link main-nav__link--white-link"> Главная </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
+              <a class="main-nav__link main-nav__link--white-link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html"> Подбор программы </a>
+              <a class="main-nav__link main-nav__link--white-link" href="form.html"> Подбор программы </a>
             </li>
           </ul>
         </nav>
@@ -56,19 +56,25 @@
             <source
               media="(min-width: 1440px)"
               srcset="
-                img/intro/index-intro-item-desc.png 1x,
-                img/intro/index-intro-item-desc@2.png 2x
+                img/intro/index-can-desktop@1x.png 1x,
+                img/intro/index-can-desktop@2x.png 2x
               "
             />
-            <img
-              src="/img/intro/index-intro-item-mob.png"
-              srcset="img/intro/index-intro-item-mob@2.png 2x"
+            <source
+            media="(min-width: 768px)"
+              srcset="
+                img/intro/index-can-tablet@1x.jpg 1x,
+                img/intro/index-can-tablet@2x.jpg 2x
+              ">
+            <img class="intro__image"
+              src="img/intro/index-can-mobile@1x.png"
+              srcset="img/intro/index-can-mobile@2x.png 2x"
               width="280"
               height="270"
               alt="Баночка корма Cat energy"
             />
           </picture>
-          <a class="button" href="form.html">Подобрать программу</a>
+          <a class="intro__button" href="form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="program-selection">
@@ -76,23 +82,23 @@
         <div class="program-selection__wrapper">
           <ul class="program-selection__list">
             <li class="program-selection__item">
-              <img src="" width="" height="" alt="" />
-              <h3 class="program-selection__title">Похудение</h3>
+                <div class="program-selection__icon"></div>
+                <h3 class="program-selection__title">Похудение</h3>
               <p class="program-selection__text">
                 Ваш кот весит больше собаки и почти утратил способность лазить
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
-              <a class="button button--programm" href="#">Каталог slim</a>
+              <a class="program-selection__button" href="#">Каталог slim</a>
             </li>
             <li class="program-selection__item">
-              <img src="" width="" height="" alt="" />
+              <div class="program-selection__icon"></div>
               <h3 class="program-selection__title">Набор массы</h3>
               <p class="program-selection__text">
                 Заработать авторитет среди дворовых котор и даже собак? Серия
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a class="button button--programm" href="#">Каталог pro</a>
+              <a class="program-selection__button" href="#">Каталог pro</a>
             </li>
           </ul>
         </div>
@@ -102,24 +108,28 @@
           <h3 class="information__title">Как это работает</h3>
           <ul class="information__list">
             <li class="information__item information__item--natural">
+              <div class="information__icon"></div>
               <p class="information__text">
                 Функциональное питание содержит только полезные питательные
                 вещества.
               </p>
             </li>
             <li class="information__item information__item--light">
+              <div class="information__icon"></div>
               <p class="information__text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и
                 готово.
               </p>
             </li>
             <li class="information__item information__item--replacement">
+              <div class="information__icon"></div>
               <p class="information__text">
                 Замените один-два приема обычной еды на наше Функциональное
                 питание.
               </p>
             </li>
             <li class="information__item information__item--fast">
+              <div class="information__icon"></div>
               <p class="information__text">
                 уже через месяц наслаждайстесь изменениями к лучшему вашего
                 питомца!
@@ -151,13 +161,26 @@
             <span>Затраты на питание:</span><span>15 000 Руб.</span>
           </p>
           <div class="example__sample">
-            <img src="" width="" height="" alt="" />
+            <img class="example__img example__img--before"
+              src="img/example/before-mobile@1x.png"
+              srcset="img/example/before-mobile@2x.png 2x"
+              width="311"
+              height="232"
+              alt="кот с лишним весом"
+            />
+            <img class="example__img example__img--after"
+              src="img/example/after-mobile@1x.png"
+              srcset="img/example/after-mobile@2x.png"
+              width="311"
+              height="232"
+              alt="Стройный кот"
+            />
             <div class="example__filter">
-              <button class="button">Было</button>
+              <button type="button" class="example__button">Было</button>
               <div class="example__scale">
                 <div class="example__bar"></div>
               </div>
-              <button class="button">Стало</button>
+              <button type="button" class="example__button">Стало</button>
             </div>
           </div>
         </div>
@@ -193,9 +216,9 @@
                 href="#"
                 aria-label="Мы в Вконткате"
               >
-              <svg width="23" height=16 fill="#666666">
-                <use xlink:href="sprite.svg#vk-icon"></use>
-              </svg>
+                <svg width="23" height="16" fill="#666666">
+                  <use xlink:href="sprite.svg#vk-icon"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
@@ -249,4 +272,12 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    var x = document.querySelector(".no-js");
+
+    if (x) {
+      x.classList.remove("no-js");
+    }
+  </script>
 </html>
