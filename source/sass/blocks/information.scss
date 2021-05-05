@@ -6,13 +6,14 @@
   @include reset-indents;
   font-size: 36px;
   line-height: 40px;
-  margin: 7px 0 26px 0;
+  margin: 5px 0 28px 0;
 
   @include font-weight-normal;
 }
 
 .information__list {
   @include reset-indents;
+  padding-bottom: 32px;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -25,6 +26,12 @@
   @include desktop {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.information__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .information__icon {
@@ -40,4 +47,6 @@
 
 .information__text {
   @include arial-text-mob;
+  width: calc(100% - 80px);
+  margin: 14px 0 12px 0;
 }
