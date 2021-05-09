@@ -19,6 +19,7 @@
 
 .personal-data__button {
   @include button;
+  margin-bottom: 6px;
 
   @include tablet {
     width: 40%;

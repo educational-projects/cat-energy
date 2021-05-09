@@ -62,4 +62,9 @@
   height: 45px;
   width: 100%;
   padding-left: 15px;
+
+  &::placeholder {
+    @include Oswald-text;
+    text-transform: uppercase;
+  }
 }

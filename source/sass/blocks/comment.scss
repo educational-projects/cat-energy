@@ -1,6 +1,7 @@
 .comment {
   @include reset-indents;
   border: none;
+  margin-bottom: 23px;
 
   @include desktop {
     width: 100%;
@@ -34,11 +35,10 @@
   width: 100%;
   min-height: 150px;
   resize: none;
-  padding-left: 14px;
-  padding-right: 12px;
+  padding: 8px 0 0 14px;
 
   &::placeholder {
-    @include Oswald;
+    @include Oswald-text;
     text-transform: uppercase;
   }
 

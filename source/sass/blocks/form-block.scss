@@ -1,5 +1,9 @@
 .form-block__wrapper {
   @include container;
+
+  @include tablet {
+    padding-left: 68px
+  }
 }
 
 .form-block__title {
@@ -15,6 +19,7 @@
   @include tablet {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 55px;
   }
 }
 
@@ -24,10 +29,12 @@
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+  width: 85%;
   margin-bottom: 39px;
 
   @include tablet {
     font-size: 20px;
     line-height: 30px;
+    width: 50%;
   }
 }

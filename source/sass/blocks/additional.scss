@@ -1,6 +1,7 @@
 .additional {
   @include reset-indents;
   border: none;
+  margin-bottom: 40px;
 
   @include desktop {
     width: 100%;
@@ -9,10 +10,11 @@
 
 .additional__title {
   @include font-weight-normal;
+  @include reset-indents;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
-  margin-bottom: 34px;
+  margin-bottom: 38px;
 
   @include tablet {
     font-size: 36px;
@@ -23,7 +25,6 @@
 .additional__list {
   @include reset-indents;
   list-style: none;
-  margin-bottom: 34px;
 
   @include tablet {
     display: grid;
@@ -40,7 +41,11 @@
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 13px;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin: 0;
+  }
 
   @include tablet {
     font-size: 20px;
