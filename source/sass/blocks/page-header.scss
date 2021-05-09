@@ -3,9 +3,11 @@
   flex-direction: column;
 
   @include tablet {
+    @include container;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 24px;
   }
 }
 
@@ -13,4 +15,11 @@
   padding: 0 20px;
   margin-top: 12px;
   margin-bottom: 14px;
+
+  @include tablet {
+    padding: 0;
+    width: 174px;
+    height: 52px;
+    margin-top: 24px;
+  }
 }

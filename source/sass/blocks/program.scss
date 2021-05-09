@@ -3,9 +3,15 @@
   border: none;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 31px;
 
   @include tablet {
     border: 1px solid #d9d9d9;
+    margin-right: 36px;
+  }
+
+  @include desktop {
+    width: 45%;
   }
 }
 
@@ -16,6 +22,7 @@ input {
 .program__list {
   @include reset-indents;
   list-style: none;
+  padding: 22px 0 19px 0;
 }
 
 .program__item {
@@ -23,6 +30,11 @@ input {
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @include tablet {
     font-size: 20px;

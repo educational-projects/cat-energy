@@ -1,20 +1,3 @@
-@mixin container-mob {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-@mixin container-tabl {
-  width: 100%;
-  padding: 0 30px;
-}
-
-@mixin container-desk {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 110px;
-}
-
 @mixin reset-indents {
   margin: 0;
   padding: 0;
@@ -25,6 +8,14 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+}
+
+@mixin arial-text {
+  font-family: "Arial", sans-serif;
+}
+
+@mixin Oswald-text {
+  font-family: "Oswald", sans-serif;
 }
 
 @mixin arial-text-catalog {
@@ -76,7 +67,7 @@
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
-  min-width: 100%;
+  width: 100%;
 }
 
 @mixin mobile-only {

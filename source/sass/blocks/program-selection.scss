@@ -1,3 +1,11 @@
+.program-selection {
+  margin-bottom: 25px;
+
+  @include tablet {
+    margin-bottom: 46px;
+  }
+}
+
 .program-selection__wrapper {
   @include container;
 }
@@ -18,15 +26,38 @@
   background-color: #f2f2f2;
   margin-bottom: 20px;
   padding-bottom: 22px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablet {
+    margin-bottom: 30px;
+    padding: 77px 0 57px 0;
+  }
 }
 
 .program-selection__text {
   margin: 0 0 15px 20px;
-  padding-right: 20px;
 
   @include arial-text-mob;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
+
+  @include tablet {
+    width: 378px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    border: none;
+    margin: 0 0 51px 52px;
+    padding-bottom: 0;
+  }
+}
+
+.program-selection__text--min-text {
+  @include tablet {
+    width: 343px
+  }
 }
 
 .program-selection__icon {
@@ -37,6 +68,13 @@
   height: 50px;
   border-radius: 50%;
   background: #68b738;
+
+  @include tablet {
+    width: 200px;
+    height: 200px;
+    top: 94px;
+    left: 446px;
+  }
 }
 
 .program-selection__title {
@@ -46,6 +84,12 @@
   @include font-weight-normal;
   font-size: 24px;
   line-height: 37px;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 25px 53px;
+  }
 }
 
 .program-selection__button {
@@ -60,5 +104,6 @@
   @include tablet {
     font-size: 20px;
     line-height: 30px;
+    margin-left: 52px;
   }
 }

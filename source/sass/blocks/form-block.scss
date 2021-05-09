@@ -3,9 +3,12 @@
 }
 
 .form-block__title {
+  @include reset-indents;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  padding-top: 26px;
+  margin-bottom: 37px;
 
   @include font-weight-normal;
 
@@ -16,9 +19,12 @@
 }
 
 .form-block__text {
+  @include reset-indents;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 39px;
 
   @include tablet {
     font-size: 20px;

@@ -4,11 +4,19 @@
 
 .example__wrapper {
   @include container;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .example__title {
   @include reset-indents;
-  margin: 28px 0 32px 0;
+  margin-bottom: 32px;
+  padding-top: 27px;
   font-size: 36px;
   line-height: 40px;
 
@@ -24,6 +32,7 @@
 .example__list {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 33px;
 }
 
 .example__item {
@@ -32,8 +41,7 @@
   border-radius: 3px;
   width: 124px;
   text-align: center;
-  padding: 15px 0 20px;
-  margin-bottom: 28px;
+  padding: 14px 0 17px;
 }
 
 .example__unit {
@@ -60,7 +68,14 @@
   text-align: center;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 36px;
+  margin-bottom: 42px;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 
 .example__filter {
@@ -85,7 +100,7 @@
   }
 }
 
-.example__img--after {
+.example__picture--after {
   display: none;
 }
 

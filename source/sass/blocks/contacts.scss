@@ -1,13 +1,19 @@
 .contacts {
   @include reset-indents;
   border: none;
+
+  @include desktop {
+    width: 100%;
+  }
 }
 
 .contacts__title {
   @include font-weight-normal;
+  @include reset-indents;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  margin-bottom: 35px;
 
   @include tablet {
     font-size: 36px;
@@ -15,16 +21,37 @@
   }
 }
 
+.contacts__content {
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
 .contacts__item {
   display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+  white-space: nowrap;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @include tablet {
     font-size: 20px;
     line-height: 30px;
+    margin: 0 36px 20px 0;
   }
+}
+
+.contacts__item label {
+  margin-right: 10px;
+  text-transform: uppercase;
 }
 
 .contacts__item input {
@@ -34,4 +61,5 @@
   border: 1px solid #cdcdcd;
   height: 45px;
   width: 100%;
+  padding-left: 15px;
 }

@@ -1,3 +1,12 @@
+.intro {
+  @include tablet {
+    background-image: url("../img/intro/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 29px 227px;
+    padding-bottom: 66%;
+  }
+}
+
 .intro::before {
   content: "";
   position: absolute;
@@ -35,6 +44,8 @@
   @include tablet {
     font-size: 60px;
     line-height: 60px;
+    width: 415px;
+    margin: 0 0 40px 86px;
   }
 }
 
@@ -49,16 +60,27 @@
     line-height: 14px;
     text-align: center;
   }
+
+  @include tablet {
+    margin: 0 0 52px 88px;
+  }
 }
 
 .intro__image {
   @include tablet {
-    width: 709px;
-    height: 609px;
+    display: none;
   }
 }
 
 .intro__button {
   @include button;
   margin-bottom: 22px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    padding: 14px 26px;
+    margin-left: 82px;
+  }
 }
