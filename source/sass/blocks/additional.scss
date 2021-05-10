@@ -9,6 +9,7 @@
 
   @include desktop {
     width: 100%;
+    margin-bottom: 67px;
   }
 }
 
@@ -56,5 +57,9 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 41px;
+  }
+
+  @include desktop {
+    margin: 0;
   }
 }

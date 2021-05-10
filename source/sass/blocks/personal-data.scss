@@ -17,6 +17,10 @@
   @include tablet {
     flex-direction: row;
   }
+
+  @include desktop {
+    width: 100%;
+  }
 }
 
 .personal-data__button {
@@ -30,7 +34,8 @@
   }
 
   @include desktop {
-    width: 50%;
+    width: 46.6%;
+    margin-right: 82px;
   }
 }
 

@@ -36,4 +36,8 @@
     width: 50%;
     margin-bottom: 67px;
   }
+
+  @include desktop {
+    width: 30%;
+  }
 }

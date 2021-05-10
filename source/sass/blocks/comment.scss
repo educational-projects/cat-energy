@@ -9,6 +9,7 @@
 
   @include desktop {
     width: 100%;
+    margin-bottom: 64px;
   }
 }
 
@@ -30,6 +31,10 @@
 .comment__item {
   @include tablet {
     margin-right: 37px;
+  }
+
+  @include desktop {
+    margin-right: 0;
   }
 }
 
