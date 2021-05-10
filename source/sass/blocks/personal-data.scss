@@ -1,6 +1,5 @@
 .personal-data__wrapper {
   @include container;
-
   @include form-tablet-indent;
 
   @include desktop {
