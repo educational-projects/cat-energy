@@ -7,7 +7,7 @@
 
   @include tablet {
     border: 1px solid #d9d9d9;
-    margin-right: 36px;
+    margin: 0 36px 75px 0;
   }
 
   @include desktop {
@@ -23,6 +23,10 @@ input {
   @include reset-indents;
   list-style: none;
   padding: 22px 0 19px 0;
+
+  @include tablet {
+    padding: 29px 0 29px 0;
+  }
 }
 
 .program__item {
@@ -39,5 +43,6 @@ input {
   @include tablet {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 23px;
   }
 }

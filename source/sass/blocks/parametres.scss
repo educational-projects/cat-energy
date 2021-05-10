@@ -4,7 +4,7 @@
   margin-bottom: 29px;
 
   @include tablet {
-    margin-bottom: 72px;
+    margin-bottom: 73px;
   }
 
   @include desktop {
@@ -29,12 +29,16 @@
   @include tablet {
     font-size: 20px;
     line-height: 30px;
-    margin-right: 36px;
+    margin: 0 36px 22px 0;
   }
 }
 
 .parametres__item label {
   margin-right: 13px;
+
+  @include tablet {
+    margin-right: 20px;
+  }
 }
 
 .parametres__item input {
@@ -51,5 +55,6 @@
   @include tablet {
     font-size: 20px;
     line-height: 30px;
+    height: 50px;
   }
 }

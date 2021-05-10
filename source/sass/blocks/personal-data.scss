@@ -1,6 +1,8 @@
 .personal-data__wrapper {
   @include container;
 
+  @include form-tablet-indent;
+
   @include desktop {
     display: flex;
     flex-wrap: wrap;
@@ -22,8 +24,9 @@
   margin-bottom: 6px;
 
   @include tablet {
-    width: 40%;
+    width: 42.5%;
     margin-right: 61px;
+    font-size: 20px;
   }
 
   @include desktop {

@@ -3,6 +3,10 @@
   border: none;
   margin-bottom: 40px;
 
+  @include tablet {
+    margin-bottom: 19px;
+  }
+
   @include desktop {
     width: 100%;
   }
@@ -19,6 +23,7 @@
   @include tablet {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 62px;
   }
 }
 
@@ -50,5 +55,6 @@
   @include tablet {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 41px;
   }
 }

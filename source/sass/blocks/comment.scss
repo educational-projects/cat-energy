@@ -3,12 +3,17 @@
   border: none;
   margin-bottom: 23px;
 
+  @include tablet {
+    margin-bottom: 63px;
+  }
+
   @include desktop {
     width: 100%;
   }
 }
 
 .comment__title {
+  @include reset-indents;
   @include font-weight-normal;
   font-size: 24px;
   line-height: 26px;
@@ -18,12 +23,13 @@
   @include tablet {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 77px;
   }
 }
 
 .comment__item {
   @include tablet {
-    margin-right: 30px;
+    margin-right: 37px;
   }
 }
 
@@ -46,5 +52,6 @@
     font-size: 20px;
     line-height: 30px;
     min-height: 174px;
+    padding: 8px 0 0 18px;
   }
 }

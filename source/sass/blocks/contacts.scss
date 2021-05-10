@@ -2,6 +2,10 @@
   @include reset-indents;
   border: none;
 
+  @include tablet {
+    margin-bottom: 66px;
+  }
+
   @include desktop {
     width: 100%;
   }
@@ -18,6 +22,7 @@
   @include tablet {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 77px;
   }
 }
 
@@ -45,13 +50,24 @@
   @include tablet {
     font-size: 20px;
     line-height: 30px;
-    margin: 0 36px 20px 0;
+    margin: 0 36px 22px 0;
   }
 }
 
 .contacts__item label {
-  margin-right: 10px;
   text-transform: uppercase;
+}
+
+.contacts__label--email {
+  @include tablet {
+    margin-right: 20px;
+  }
+}
+
+.contacts__label--phone {
+  @include tablet {
+    margin-right: 14px;
+  }
 }
 
 .contacts__item input {
@@ -62,6 +78,13 @@
   height: 45px;
   width: 100%;
   padding-left: 15px;
+
+  @include tablet {
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 19px;
+  }
 
   &::placeholder {
     @include Oswald-text;

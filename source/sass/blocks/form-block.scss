@@ -1,9 +1,7 @@
 .form-block__wrapper {
   @include container;
 
-  @include tablet {
-    padding-left: 68px
-  }
+  @include form-tablet-indent;
 }
 
 .form-block__title {
@@ -36,5 +34,6 @@
     font-size: 20px;
     line-height: 30px;
     width: 50%;
+    margin-bottom: 67px;
   }
 }
