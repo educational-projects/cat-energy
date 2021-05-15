@@ -14,6 +14,7 @@
   font-size: 24px;
   line-height: 24px;
   background-color: #ffffff;
+  margin-bottom: 35px;
 
   @include font-weight-normal;
   color: #000000;
@@ -26,12 +27,25 @@
 
 .additional-products__list {
   @include reset-indents;
+
+  @include mobile-only {
+    border-top: 1px solid #cdcdcd;
+    padding-top: 13px;
+  }
   list-style: none;
+  margin-bottom: 37px;
+}
+
+.additional-products__item {
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 19px;
+  margin-bottom: 11px;
 }
 
 .additional-products__name {
   @include reset-indents;
   text-transform: uppercase;
+  margin-bottom: 13px;
 
   @include font-weight-normal;
   font-size: 16px;
@@ -46,9 +60,12 @@
 
 .additional-products__info {
   @include arial-text;
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+  margin-bottom: 15px;
 
   @include tablet {
     font-size: 16px;
@@ -57,11 +74,11 @@
 }
 
 .additional-products__bonus {
-  min-width: 289px;
-  min-height: 280px;
+  height: 320px;
   background-image: url("../img/additional-products/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% 280px;
+  margin-bottom: 35px;
 
   @include tablet {
     min-height: 200px;
@@ -78,6 +95,7 @@
 
 .additional-products__bonus-text {
   @include arial-text-catalog;
+  @include reset-indents;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;

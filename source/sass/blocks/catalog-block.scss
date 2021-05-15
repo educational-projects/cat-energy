@@ -1,18 +1,22 @@
+.catalog-block {
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 83px;
+  }
+}
+
 .catalog-block__wrapper {
   @include container;
 }
 
 .catalog-block__title {
-  @include mobile-only {
-    border-bottom: 1px solid #ebebeb;
-    padding-bottom: 41px;
-  }
-
   @include reset-indents;
   @include font-weight-normal;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  margin-top: 27px;
 
   @include tablet {
     font-size: 60px;

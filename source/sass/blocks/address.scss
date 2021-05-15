@@ -1,3 +1,11 @@
+.address {
+  background-color: #f2f2f2;
+
+  @include desktop {
+    background-color: #ffffff;
+  }
+}
+
 .address__wrapper {
   @include container;
   display: flex;

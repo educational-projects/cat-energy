@@ -79,7 +79,7 @@ input {
   }
 }
 
-.program__input-radio:checked +label::after {
+.program__input-radio:checked + label::after {
   content: "";
   position: absolute;
   display: block;
