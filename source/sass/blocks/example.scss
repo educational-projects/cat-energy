@@ -21,18 +21,35 @@
   line-height: 40px;
 
   @include font-weight-normal;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    margin-bottom: 64px;
+  }
 }
 
 .example__text {
   @include arial-text-mob;
   @include reset-indents;
   margin-bottom: 25px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 10px 53px 0;
+  }
 }
 
 .example__list {
   display: flex;
   justify-content: space-between;
   margin-bottom: 33px;
+
+  @include tablet {
+    width: 52%;
+  }
 }
 
 .example__item {
@@ -42,6 +59,11 @@
   width: 124px;
   text-align: center;
   padding: 14px 0 17px;
+
+  @include tablet {
+    width: 162px;
+    padding: 14px 0 19px;
+  }
 }
 
 .example__unit {
@@ -49,6 +71,11 @@
   text-transform: uppercase;
   font-size: 24px;
   line-height: 24px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__desc {
@@ -61,6 +88,12 @@
   left: 21px;
   margin-right: 20px;
   background-color: #eaeaea;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+  }
 }
 
 .example__price {
@@ -75,6 +108,10 @@
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 30px;
+    min-height: 50px;
   }
 }
 

@@ -60,23 +60,24 @@
         <div class="intro__wrapper">
           <h1 class="intro__title">Функциональное питание для котов</h1>
           <p class="intro__text">Занялся собой? Займись котом!</p>
-          <picture>
-            <source
-              media="(min-width: 1440px)"
-              srcset="
-                img/intro/index-can-desktop@1x.png 1x,
-                img/intro/index-can-desktop@2x.png 2x
-              "
-            />
-            <img
-              class="intro__image"
-              src="img/intro/index-can-mobile@1x.png"
-              srcset="img/intro/index-can-mobile@2x.png 2x"
-              width="280"
-              height="270"
-              alt="Баночка корма Cat energy"
-            />
-          </picture>
+          <div class="intro__image">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  img/intro/index-can-desktop@1x.png 1x,
+                  img/intro/index-can-desktop@2x.png 2x
+                "
+              />
+              <img
+                src="img/intro/index-can-mobile@1x.png"
+                srcset="img/intro/index-can-mobile@2x.png 2x"
+                width="280"
+                height="270"
+                alt="Баночка корма Cat energy"
+              />
+            </picture>
+          </div>
           <a class="intro__button" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -85,17 +86,29 @@
         <div class="program-selection__wrapper">
           <ul class="program-selection__list">
             <li class="program-selection__item">
-              <div class="program-selection__icon"></div>
+              <div class="program-selection__icon">
+                <svg class="icon-cat-slim">
+                  <use xlink:href="img/sprite/sprite.svg#cat-slim"></use>
+                </svg>
+              </div>
               <h3 class="program-selection__title">Похудение</h3>
               <p class="program-selection__text">
                 Ваш кот весит больше собаки и почти утратил способность лазить
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
-              <a class="program-selection__button" href="#">Каталог slim</a>
+              <a class="program-selection__button" href="#">Каталог slim
+                <svg class="icon-arrow">
+                  <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
             </li>
             <li class="program-selection__item">
-              <div class="program-selection__icon"></div>
+              <div class="program-selection__icon">
+                <svg class="icon-cat-pro">
+                  <use xlink:href="img/sprite/sprite.svg#cat-pro"></use>
+                </svg>
+              </div>
               <h3 class="program-selection__title">Набор массы</h3>
               <p
                 class="program-selection__text program-selection__text--min-text"
@@ -103,7 +116,11 @@
                 Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a class="program-selection__button" href="#">Каталог pro</a>
+              <a class="program-selection__button" href="#">Каталог pro
+                <svg class="icon-arrow">
+                  <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -115,7 +132,11 @@
             <li
               class="information__item information__item--1 information__item--natural"
             >
-              <div class="information__icon"></div>
+              <div class="information__icon">
+                <svg class="icon-leaf">
+                  <use xlink:href="img/sprite/sprite.svg#leaf"></use>
+                </svg>
+              </div>
               <p class="information__text">
                 Функциональное питание содержит только полезные питательные
                 вещества.
@@ -124,7 +145,11 @@
             <li
               class="information__item information__item--2 information__item--light"
             >
-              <div class="information__icon"></div>
+              <div class="information__icon">
+                <svg class="icon-tub">
+                  <use xlink:href="img/sprite/sprite.svg#tub"></use>
+                </svg>
+              </div>
               <p class="information__text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и
                 готово.
@@ -133,7 +158,11 @@
             <li
               class="information__item information__item--3 information__item--replacement"
             >
-              <div class="information__icon"></div>
+              <div class="information__icon">
+                <svg class="icon-eat">
+                  <use xlink:href="img/sprite/sprite.svg#eat"></use>
+                </svg>
+              </div>
               <p class="information__text">
                 Замените один-два приема обычной еды на наше Функциональное
                 питание.
@@ -142,7 +171,11 @@
             <li
               class="information__item information__item--4 information__item--fast"
             >
-              <div class="information__icon"></div>
+              <div class="information__icon">
+                <svg class="icon-alarm">
+                  <use xlink:href="img/sprite/sprite.svg#alarm"></use>
+                </svg>
+              </div>
               <p class="information__text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
               </p>
@@ -162,11 +195,11 @@
           <div class="example__list">
             <div class="example__item">
               <b class="example__unit">5 кг</b>
-              <p class="example__desc">Снижение веса</p>
+              <p class="example__desc">снижение веса</p>
             </div>
             <div class="example__item">
               <b class="example__unit">60 Дней</b>
-              <p class="example__desc">Затрачено времени</p>
+              <p class="example__desc">затрачено времени</p>
             </div>
           </div>
           <p class="example__price">
@@ -204,7 +237,7 @@
         </div>
       </section>
     </main>
-    <footer class="page__footer">
+    <footer class="page__footer page-footer">
       <h2 class="visually-hidden">Контактная информация</h2>
       <div class="page-footer__address address">
         <div class="address__wrapper">

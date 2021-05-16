@@ -7,22 +7,23 @@
 
 // Blocks
 
-@import "blocks/page";
-@import "blocks/page-header";
-@import "blocks/main-nav";
-@import "blocks/intro";
-@import "blocks/program-selection";
-@import "blocks/information";
+@import "../img/sprite/sprite.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/program-selection.scss";
+@import "blocks/information.scss";
 @import "blocks/example.scss";
 @import "blocks/address.scss";
-@import "blocks/page-footer";
-@import "blocks/social";
-@import "blocks/product";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/product.scss";
 @import "blocks/additional-products.scss";
 @import "blocks/catalog-block.scss";
-@import "blocks/form-block";
-@import "blocks/personal-data";
-@import "blocks/program";
+@import "blocks/form-block.scss";
+@import "blocks/personal-data.scss";
+@import "blocks/program.scss";
 @import "blocks/contacts.scss";
 @import "blocks/comment.scss";
 @import "blocks/additional.scss";
