@@ -1,3 +1,7 @@
+.additional-products {
+  margin-bottom: 35px;
+}
+
 .additional-products__wrapper {
   @include container;
 }
@@ -46,11 +50,6 @@
   border-bottom: 1px solid #cdcdcd;
   padding-bottom: 19px;
   margin-bottom: 11px;
-
-  &:last-child {
-    border: none;
-    margin: 0;
-  }
 
   @include tablet {
     display: flex;
@@ -101,11 +100,11 @@
 }
 
 .additional-products__bonus {
-  height: 320px;
   background-image: url("../img/additional-products/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 280px;
-  margin-bottom: 35px;
+  background-size: 100% 289px;
+  text-align: center;
+  padding: 58px 0 43px;
 
   @include tablet {
     min-height: 200px;
@@ -120,12 +119,17 @@
   }
 }
 
+.additional-products__gift-icon {
+  margin-bottom: 47px
+}
+
 .additional-products__bonus-text {
   @include arial-text-catalog;
   @include reset-indents;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  margin: 0 50px;
 }
 
 .additional-products__button {

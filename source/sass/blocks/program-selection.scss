@@ -18,6 +18,7 @@
 
   @include desktop {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -76,6 +77,12 @@
     top: 94px;
     left: 446px;
   }
+
+  @include desktop {
+    width: 100px;
+    height: 100px;
+
+  }
 }
 
 .icon-cat-slim {
@@ -89,6 +96,11 @@
     top: -13px;
     left: 30px;
   }
+
+  @include desktop {
+    width: 70px;
+    height: 97px;
+  }
 }
 
 .icon-cat-pro {
@@ -101,6 +113,11 @@
     height: 112px;
     top: 41px;
     left: -34px;
+  }
+
+  @include desktop {
+    width: 134px;
+    height: 56px;
   }
 }
 
