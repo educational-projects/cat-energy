@@ -101,7 +101,10 @@
 }
 
 .information__text {
-  @include arial-text-mob;
+  @include arial-text;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
   width: calc(100% - 80px);
   margin: 0;
 

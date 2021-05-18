@@ -124,7 +124,7 @@
 }
 
 .additional-products__bonus-text {
-  @include arial-text-catalog;
+  @include arial-text;
   @include reset-indents;
   font-size: 16px;
   line-height: 20px;

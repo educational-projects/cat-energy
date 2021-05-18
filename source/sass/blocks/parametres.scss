@@ -42,7 +42,7 @@
 }
 
 .parametres__item input {
-  font-family: "Oswald", sans-serif;
+  @include Oswald-text;
   border: 1px solid #e7e7e7;
   height: 45px;
   width: 100%;

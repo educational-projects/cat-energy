@@ -24,6 +24,8 @@
 .address__text {
   margin: 0;
 
-  @include arial-text-mob;
+  @include arial-text;
+  font-size: 14px;
   line-height: 20px;
+  color: #444444;
 }

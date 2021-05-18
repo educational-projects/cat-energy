@@ -29,7 +29,7 @@
   }
 }
 
-.main-nav__link--white-link {
+.main-nav--white-link .main-nav__link {
   @include desktop {
     color: #ffffff;
   }

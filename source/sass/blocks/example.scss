@@ -31,8 +31,11 @@
 }
 
 .example__text {
-  @include arial-text-mob;
+  @include arial-text;
   @include reset-indents;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
   margin-bottom: 25px;
 
   @include tablet {
@@ -79,9 +82,9 @@
 }
 
 .example__desc {
+  @include arial-text;
   position: absolute;
   margin: 0;
-  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   top: 47px;
@@ -126,7 +129,7 @@
 }
 
 .example__button {
-  font-family: "Oswald", sans-serif;
+  @include Oswald-text;
   border: none;
   font-size: 16px;
   line-height: 20px;

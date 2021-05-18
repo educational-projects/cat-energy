@@ -41,7 +41,10 @@
 .program-selection__text {
   margin: 0 21px 13px;
 
-  @include arial-text-mob;
+  @include arial-text;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 

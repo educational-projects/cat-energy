@@ -178,8 +178,11 @@
 }
 
 .product__text {
-  @include arial-text-catalog;
+  @include arial-text;
   @include reset-indents;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
   text-align: center;
   margin-bottom: 20px;
 }
