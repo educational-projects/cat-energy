@@ -38,20 +38,12 @@
               <a class="main-nav__link"> Главная </a>
             </li>
             <li class="main-nav__item">
-              <a
-                class="main-nav__link"
-                href="catalog.html"
-              >
+              <a class="main-nav__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item">
-              <a
-                class="main-nav__link"
-                href="form.html"
-              >
-                Подбор программы
-              </a>
+              <a class="main-nav__link" href="form.html"> Подбор программы </a>
             </li>
           </ul>
         </nav>
@@ -206,24 +198,42 @@
           </p>
           <div class="example__sample">
             <div class="example__picture example__picture--before">
-              <img
-                class="example__img"
-                src="img/example/before-mobile@1x.png"
-                srcset="img/example/before-mobile@2x.png 2x"
-                width="311"
-                height="232"
-                alt="кот с лишним весом"
-              />
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/example/before-tablet@1x.png 1x,
+                    img/example/before-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="example__img"
+                  src="img/example/before-mobile@1x.png"
+                  srcset="img/example/before-mobile@2x.png 2x"
+                  width="311"
+                  height="232"
+                  alt="кот с лишним весом"
+                />
+              </picture>
             </div>
             <div class="example__picture example__picture--after">
-              <img
-                class="example__img"
-                src="img/example/after-mobile@1x.png"
-                srcset="img/example/after-mobile@2x.png"
-                width="311"
-                height="232"
-                alt="Стройный кот"
-              />
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/example/after-tablet@1x.png 1x,
+                    img/example/after-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="example__img"
+                  src="img/example/after-mobile@1x.png"
+                  srcset="img/example/after-mobile@2x.png"
+                  width="311"
+                  height="232"
+                  alt="Стройный кот"
+                />
+              </picture>
             </div>
             <div class="example__filter">
               <button type="button" class="example__button">Было</button>

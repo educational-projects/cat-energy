@@ -106,16 +106,28 @@
   text-align: center;
   padding: 58px 0 43px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/additional-products/gift-photo-mobile@2x.jpg");
+  }
+
   @include tablet {
     min-height: 200px;
     background-image: url("../img/additional-products/gift-photo-tablet@1x.jpg");
     background-size: 100% 200px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/additional-products/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @include desktop {
     min-height: 289px;
     background-image: url("../img/additional-products/gift-photo-desktop@1x.jpg");
     background-size: 100% 289px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/additional-products/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 

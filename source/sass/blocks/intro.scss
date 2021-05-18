@@ -4,6 +4,10 @@
     background-repeat: no-repeat;
     background-position: 29px 227px;
     padding-bottom: 66%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/index-can-tablet@2x.jpg");
+    }
   }
 
   @include desktop {
@@ -17,10 +21,14 @@
   position: absolute;
   width: 100%;
   min-height: 302px;
-  background-image: url("../img/intro/test.png");
+  background-image: url("../img/intro/index-background-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro/index-background-mobile@2x.jpg");
+  }
 
   @include tablet {
     background-image: none;
@@ -34,6 +42,10 @@
     top: 0;
     right: 0;
     width: 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/index-background-desktop@2x.jpg");
+    }
   }
 }
 
