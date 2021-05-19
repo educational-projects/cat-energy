@@ -1,11 +1,5 @@
 .address {
-  display: flex;
-  background-color: #f2f2f2;
-  padding: 29px 0 23px;
-
-  @include desktop {
-    background-color: #ffffff;
-  }
+  padding: 29px 0 25px;
 }
 
 .address__wrapper {
@@ -17,15 +11,33 @@
 .address__title {
   @include font-weight-normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
+  max-width: 140px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .address__text {
-  margin: 0;
-
   @include arial-text;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  max-width: 140px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.address__street {
+  @include reset-indents;
+}
+
+.address__city {
+  @include reset-indents;
 }

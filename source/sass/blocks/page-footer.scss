@@ -1,3 +1,24 @@
+.page-footer {
+  background-color: #f2f2f2;
+}
+
 .page-footer__wrapper {
   @include container;
+  text-align: center;
+}
+
+.page-footer__map {
+  margin-bottom: 38px;
+}
+
+.icon-cat-enyrgy {
+  margin-bottom: 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

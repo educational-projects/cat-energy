@@ -3,26 +3,12 @@
   padding: 0;
 }
 
-@mixin arial-text-mob {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
-}
-
 @mixin arial-text {
   font-family: "Arial", sans-serif;
 }
 
 @mixin Oswald-text {
   font-family: "Oswald", sans-serif;
-}
-
-@mixin arial-text-catalog {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  color: #444444;
 }
 
 @mixin font-weight-normal {

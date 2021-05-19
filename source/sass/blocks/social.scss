@@ -1,6 +1,10 @@
+.social {
+  margin-bottom: 22px;
+}
+
 .social__list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 
   @include reset-indents;
   list-style: none;
@@ -8,5 +12,22 @@
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid #d9d9d9;
     border-top: 1px solid #d9d9d9;
+    padding: 21px 0 18px;
+  }
+}
+
+.social__item {
+  width: 53px;
+}
+
+.social__icon {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
