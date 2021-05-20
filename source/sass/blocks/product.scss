@@ -21,6 +21,8 @@
 
   @include desktop {
     grid-template-columns: repeat(4, 1fr);
+    gap: 85px 80px;
+    margin-bottom: 74px;
   }
 }
 
@@ -35,6 +37,10 @@
     padding: 0 37px;
     background: linear-gradient(0deg, rgb(242, 242, 242) 88%, rgb(255, 255, 255) 88%);
   }
+
+  @include desktop {
+    padding: 0 34px 0 40px;
+  }
 }
 
 .product__item--more {
@@ -48,6 +54,10 @@
     margin-top: 56px;
   }
 
+  @include desktop {
+    margin-top: 60px;
+  }
+
   & .product__title {
     color: #111111;
     text-align: center;
@@ -57,6 +67,10 @@
     @include tablet {
       line-height: 22px;
       margin: 0 45px 25px;
+    }
+
+    @include desktop {
+      margin: 0 0 23px;
     }
   }
 
@@ -69,6 +83,10 @@
       font-size: 16px;
       line-height: 18px;
       margin: 0 20px 85px;
+    }
+
+    @include desktop {
+      margin: 0 0 85px;
     }
   }
 
@@ -88,6 +106,10 @@
       width: 60px;
       height: 60px;
       margin: 50px 0 49px;
+    }
+
+    @include desktop {
+      margin: 49px 0 50px;
     }
 
     &::after {
@@ -136,6 +158,11 @@
     margin-bottom: 17px;
   }
 
+  @include desktop {
+    height: 196px;
+    margin-bottom: 26px;
+  }
+
   & img {
     width: auto;
     padding: 16px 0;
@@ -148,7 +175,8 @@
   height: 16px;
 
   @include tablet {
-    margin-bottom: 16px;
+    margin-bottom: 7px;
+    padding-bottom: 24px;
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -172,6 +200,7 @@
 
   @include desktop {
     line-height: 21px;
+    margin: 0 15px 24px;
   }
 }
 

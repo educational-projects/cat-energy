@@ -20,6 +20,14 @@
   &:active {
     opacity: 0.3;
   }
+
+  @include tablet {
+    margin: 4px 24px 0 0;
+  }
+
+  @include desktop {
+    margin: 9px 24px 0 0;
+  }
 }
 
 .icon-htmlacademy {

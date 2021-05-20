@@ -1,11 +1,27 @@
 .address {
   padding: 29px 0 25px;
+
+  @include tablet {
+    padding: 67px 42px 59px;
+  }
+
+  @include desktop {
+    position: absolute;
+    top: 93px;
+    left: 110px;
+    padding: 66px 89px 60px 76px;
+    background-color: #ffffff;
+  }
 }
 
 .address__wrapper {
   @include container;
   display: flex;
   justify-content: space-between;
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .address__title {
@@ -17,7 +33,11 @@
 
   @include tablet {
     font-size: 20px;
-    line-height: 22px;
+    line-height: 25px;
+  }
+
+  @include desktop {
+    margin-right: 110px;
   }
 }
 
@@ -29,8 +49,17 @@
   max-width: 140px;
 
   @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+    max-width: 165px;
+  }
+
+  @include desktop {
+    text-align: left;
   }
 }
 

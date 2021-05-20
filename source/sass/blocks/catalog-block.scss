@@ -4,6 +4,10 @@
   @include tablet {
     margin-bottom: 108px;
   }
+
+  @include desktop {
+    margin-bottom: 107px;
+  }
 }
 
 .catalog-block__wrapper {
