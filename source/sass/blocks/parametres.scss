@@ -57,4 +57,17 @@
     line-height: 30px;
     height: 50px;
   }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+    outline: none;
+  }
+
+  &:invalid:focus {
+    border-color: #ff8282;
+  }
 }

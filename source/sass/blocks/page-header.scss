@@ -34,4 +34,12 @@
     height: 60px;
     margin-top: 27px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

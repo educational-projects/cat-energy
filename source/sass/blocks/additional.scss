@@ -16,6 +16,8 @@
 .additional__title {
   @include font-weight-normal;
   @include reset-indents;
+  position: relative;
+  display: inline-block;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
@@ -25,6 +27,22 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 62px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: calc(100vw - 100% - 23px);
+    background: #68b738;
+    right: calc(100% + 40px);
+    top: 15px;
+    box-shadow: calc(100vw + 40px) 0 0 #68b738;
+
+    @include tablet {
+      top: 22px;
+      width: calc(100vw - 100% - 40px);
+    }
   }
 }
 
@@ -49,7 +67,7 @@
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   &:last-child {
     margin: 0;

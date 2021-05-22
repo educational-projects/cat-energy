@@ -12,6 +12,21 @@
   }
 }
 
+.main-nav__item:hover {
+  opacity: 0.6;
+}
+
+.main-nav__item:active {
+  opacity: 0.3;
+}
+
+.main-nav__item--current {
+  @include tablet {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #68b738;
+  }
+}
+
 .main-nav__link {
   font-weight: 500;
   color: #000000;
@@ -32,6 +47,12 @@
 .main-nav--white-link .main-nav__link {
   @include desktop {
     color: #ffffff;
+  }
+}
+
+.main-nav--white-link .main-nav__item--current {
+  @include tablet {
+    border-bottom: 2px solid #ffffff;
   }
 }
 

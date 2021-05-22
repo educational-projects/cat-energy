@@ -34,14 +34,14 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html"> Главная </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html"> Каталог продукции </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link"> Подбор программы </a>
+              <a class="main-nav__link main-nav__item--current  "> Подбор программы </a>
             </li>
           </ul>
         </nav>
@@ -67,11 +67,12 @@
                     type="text"
                     name="Имя"
                     placeholder="Барсик"
+                    required
                   />
                 </div>
                 <div class="parametres__item">
                   <label for="cat-weight">Вес (кг):*</label>
-                  <input id="cat-weight" type="text" name="Вес" placeholder="7" />
+                  <input id="cat-weight" type="text" name="Вес" placeholder="7" required />
                 </div>
                 <div class="parametres__item">
                   <label for="cat-age">Возраст (лет):</label>
@@ -129,19 +130,27 @@
                     <label class="contacts__label--email" for="email">E-mail:*</label>
                     <input
                       id="email"
-                      type="text"
+                      type="email"
                       name="email"
                       placeholder="kuklachev@gmail.com"
+                      required
                     />
+                    <svg class="contacts__icon contacts__icon--email icon-email" width="20" height="15">
+                      <use xlink:href="img/sprite/sprite.svg#email"></use>
+                  </svg>
                   </div>
                   <div class="contacts__item">
                     <label class="contacts__label--phone" for="phone">Телефон:*</label>
                     <input
                       id="phone"
-                      type="text"
+                      type="tel"
                       name="телефон"
                       placeholder="8 (960) 900-60-90"
+                      required
                     />
+                    <svg class="contacts__icon contacts__icon--phone icon-phone" width="20" height="20">
+                      <use xlink:href="img/sprite/sprite.svg#phone"></use>
+                  </svg>
                   </div>
                 </div>
             </fieldset>

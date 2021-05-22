@@ -84,6 +84,7 @@
   @include desktop {
     width: 100px;
     height: 100px;
+    left: 50px;
   }
 }
 
@@ -146,15 +147,26 @@
   margin-left: 20px;
   text-transform: uppercase;
 
-
   @include tablet {
     font-size: 20px;
     line-height: 30px;
     margin-left: 52px;
   }
+
+  &:hover .icon-arrow {
+    width: 32px;
+    height: 10px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
+
 .icon-arrow {
+  width: 24px;
+  height: 12px;
   margin-left: 12px;
 
   @include tablet {

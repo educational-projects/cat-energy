@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 85px 60px;
-    margin-bottom: 66px;
+    margin-bottom: 64px;
   }
 
   @include desktop {
@@ -95,6 +95,14 @@
     color: #444444;
   }
 
+  & .product__button:hover {
+    background-color: #ebebeb;
+  }
+
+  & .product__button:active {
+    color: rgba(#444444, 0.3);
+  }
+
   & .product__decor {
     position: relative;
     width: 30px;
@@ -164,8 +172,11 @@
   }
 
   & img {
-    width: auto;
     padding: 16px 0;
+
+    @include tablet {
+      width: auto;
+    }
   }
 }
 

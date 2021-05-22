@@ -1,3 +1,15 @@
+.personal-data {
+  margin-bottom: 31px;
+
+  @include tablet {
+    margin-bottom: 53px;
+  }
+
+  @include desktop {
+    margin-bottom: 65px;
+  }
+}
+
 .personal-data__wrapper {
   @include container;
   @include form-tablet-indent;
@@ -24,7 +36,7 @@
 
 .personal-data__button {
   @include button;
-  margin-bottom: 6px;
+  margin-bottom: 19px;
 
   @include tablet {
     width: 42.5%;
@@ -40,6 +52,7 @@
 
 .personal-data__text {
   @include arial-text;
+  @include reset-indents;
   font-size: 14px;
   line-height: 16px;
   color: #000000;
@@ -47,5 +60,6 @@
 
   @include tablet {
     font-size: 16px;
+    margin-top: 16px;
   }
 }
