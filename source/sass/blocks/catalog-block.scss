@@ -20,10 +20,15 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  margin-top: 27px;
+  margin-top: 30px;
 
   @include tablet {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 27px;
+  }
+
+  @include desktop {
+    margin-top: 60px;
   }
 }

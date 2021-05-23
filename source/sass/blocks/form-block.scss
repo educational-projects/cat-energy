@@ -8,7 +8,7 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  padding-top: 26px;
+  padding-top: 29px;
   margin-bottom: 37px;
 
   @include font-weight-normal;
@@ -16,7 +16,12 @@
   @include tablet {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 55px;
+    padding-top: 26px;
+    margin-bottom: 54px;
+  }
+
+  @include desktop {
+    padding-top: 59px;
   }
 }
 

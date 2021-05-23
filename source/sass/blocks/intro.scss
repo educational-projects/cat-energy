@@ -70,7 +70,7 @@
 .intro__title {
   margin: 0;
   margin-bottom: 25px;
-  padding-top: 27px;
+  padding-top: 29px;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
@@ -86,11 +86,13 @@
     font-size: 60px;
     line-height: 60px;
     width: 415px;
-    margin: 0 0 40px 80px;
+    padding-top: 26px;
+    margin: 0 0 41px 87px;
   }
 
   @include desktop {
     padding-top: 96px;
+    margin: 0 0 39px 80px;
   }
 }
 
@@ -107,6 +109,10 @@
   }
 
   @include tablet {
+    margin: 0 0 52px 88px;
+  }
+
+  @include desktop {
     margin: 0 0 55px 80px;
   }
 }

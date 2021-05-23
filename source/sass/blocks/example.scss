@@ -30,7 +30,7 @@
 
 .example__title {
   @include reset-indents;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   padding-top: 27px;
   font-size: 36px;
   line-height: 40px;
@@ -186,12 +186,12 @@
     position: relative;
     height: 567px;
     overflow: hidden;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
   }
 
   @include desktop {
     height: 524px;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 }
 
@@ -243,7 +243,15 @@
   @include tablet {
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 1px dotted #000000;
+    border-bottom: 1px dotted rgba( #000000, 0.4);
+
+    &:hover {
+      border-bottom: 1px solid rgba( #000000, 0.4);
+    }
+
+    &:active {
+      border: none;
+    }
   }
 }
 
@@ -282,6 +290,7 @@
     border-radius: 50%;
     background: #ffffff;
     border: 1px solid #cdcdcd;
+    box-shadow: (0px 1px 3px rgba(0, 0, 0, 0.16));
 
     &::before {
       position: absolute;
@@ -292,6 +301,15 @@
       height: 8px;
       border-radius: 50%;
       background: #68b738;
+    }
+
+    &:hover {
+      box-shadow: (0px 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      box-shadow: (0px 3px 5px rgba(0, 0, 0, 0.2));
+      border: 1px solid #68b738;
     }
   }
 }

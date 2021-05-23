@@ -101,14 +101,16 @@
   @include tablet {
     width: 200px;
     height: 200px;
-    top: 94px;
-    left: 446px;
+    top: 92px;
+    left: auto;
+    right: 62px;
   }
 
   @include desktop {
     position: relative;
     width: 100px;
     height: 100px;
+    right: auto;
     left: 52px;
     top: 9px;
   }
