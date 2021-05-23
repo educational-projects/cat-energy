@@ -135,10 +135,26 @@
   &:focus {
     border: 2px solid #444444;
     outline: none;
+
+    & + .contacts__icon--phone {
+      fill: #68b738;
+    }
+
+    & + .contacts__icon--email {
+      stroke: #68b738;
+    }
   }
 
   &:invalid:focus {
     border-color: #ff8282;
+
+    & + .contacts__icon--phone {
+      fill: #ff8282;
+    }
+
+    & + .contacts__icon--email {
+      stroke: #ff8282;
+    }
   }
 }
 
@@ -158,4 +174,8 @@
 
 .contacts__icon--phone {
   fill: #000000;
+}
+
+.contacts__icon--email {
+  stroke: #000000;
 }

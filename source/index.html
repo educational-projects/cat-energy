@@ -8,7 +8,7 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicon.svg" type="image/svg+hml" />
   </head>
-  <body class="page__body no-js">
+  <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
@@ -29,7 +29,7 @@
             />
           </picture>
         </a>
-        <nav class="page-header__nav main-nav main-nav--white-link">
+        <nav class="page-header__nav main-nav main-nav--white-link main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -185,7 +185,7 @@
             </div>
           </div>
           <p class="example__price">
-            <span>Затраты на питание:</span><span>15 000 Руб.</span>
+            <span>Затраты на питание:</span><span class="example__price-value">15 000 Руб.</span>
           </p>
           <div class="example__sample">
             <div class="example__slider">
@@ -316,12 +316,4 @@
       </div>
     </footer>
   </body>
-
-  <script>
-    var x = document.querySelector(".no-js");
-
-    if (x) {
-      x.classList.remove("no-js");
-    }
-  </script>
 </html>

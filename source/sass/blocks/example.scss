@@ -1,6 +1,14 @@
 .example {
   background-color: #eaeaea;
   padding-bottom: 36px;
+
+  @include tablet {
+    padding-bottom: 67px;
+  }
+
+  @include desktop {
+    padding-bottom: 44px;
+  }
 }
 
 .example__wrapper {
@@ -11,6 +19,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @include desktop {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 613px;
   }
 }
 
@@ -48,6 +62,12 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0 10px 53px 0;
+
+    @include desktop {
+      width: 438px;
+      margin: 0;
+      margin-bottom: 69px;
+    }
   }
 }
 
@@ -58,6 +78,11 @@
 
   @include tablet {
     width: 52%;
+  }
+
+  @include desktop {
+    width: 30%;
+    margin-bottom: 29px;
   }
 }
 
@@ -128,11 +153,25 @@
     margin-bottom: 30px;
     min-height: 50px;
   }
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.example__price-value {
+  @include desktop {
+    margin-left: 63px;
+  }
 }
 
 .example__sample {
   @include tablet {
     margin: 0 auto;
+  }
+
+  @include desktop {
+    margin-left: 138px;
   }
 }
 
@@ -147,14 +186,23 @@
     position: relative;
     height: 567px;
     overflow: hidden;
+    margin-bottom: 13px;
+  }
+
+  @include desktop {
+    height: 524px;
+    margin-bottom: 32px;
   }
 }
 
 .example__picture {
-  position: absolute;
   width: auto;
   height: auto;
   overflow: hidden;
+
+  @include tablet {
+    position: absolute;
+  }
 
   & img {
     @include tablet {
@@ -175,6 +223,10 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 33px 0 38px;
+
+  @include desktop {
+    margin: 0 0 0 68px;
+  }
 }
 
 .example__button {
@@ -208,6 +260,7 @@
     height: 6px;
     background: #cdcdcd;
     border: none;
+    margin: 0 15px;
   }
 }
 
