@@ -12,8 +12,18 @@
   }
 
   @include desktop {
-    background-image: none;
+    background-image: url("../img/intro/index-can-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 552px 499px;
     padding-bottom: 0;
+    background-position: 63% 13px;
+    position: relative;
+    padding-bottom: 165px;
+    margin-bottom: 82px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/index-can-desktop@2x.png");
+    }
   }
 }
 
@@ -40,7 +50,7 @@
     background-size: 720px 694px;
     position: absolute;
     min-height: 720px;
-    top: 0;
+    top: -128px;
     right: 0;
     width: 50%;
 
@@ -77,11 +87,11 @@
     font-size: 60px;
     line-height: 60px;
     width: 415px;
-    margin: 0 0 40px 86px;
+    margin: 0 0 40px 80px;
   }
 
   @include desktop {
-    padding-top: 64px;
+    padding-top: 96px;
   }
 }
 
@@ -98,25 +108,26 @@
   }
 
   @include tablet {
-    margin: 0 0 52px 88px;
+    margin: 0 0 55px 80px;
   }
 }
 
 .intro__image {
   display: flex;
   justify-content: center;
+  padding-bottom: 4px;
 
   @include tablet {
     display: none;
   }
-
-  @include desktop {
-    display: block;
-    position: absolute;
-  }
 }
 
 .intro__button {
+  @include mobile-only {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
   @include button;
   margin-bottom: 22px;
 
@@ -125,6 +136,6 @@
     line-height: 20px;
     width: 244px;
     padding: 14px 26px;
-    margin-left: 82px;
+    margin-left: 80px;
   }
 }

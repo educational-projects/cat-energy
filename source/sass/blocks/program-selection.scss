@@ -4,6 +4,10 @@
   @include tablet {
     margin-bottom: 46px;
   }
+
+  @include desktop {
+    margin-bottom: 41px;
+  }
 }
 
 .program-selection__wrapper {
@@ -36,6 +40,16 @@
     margin-bottom: 30px;
     padding: 77px 0 57px 0;
   }
+
+  @include desktop {
+    padding: 0;
+    width: 570px;
+    height: 374px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .program-selection__text {
@@ -57,11 +71,21 @@
     margin: 0 0 51px 52px;
     padding-bottom: 0;
   }
+
+  @include desktop {
+    width: auto;
+    padding-right: 23px;
+    margin-bottom: 0;
+  }
 }
 
 .program-selection__text--min-text {
   @include tablet {
     width: 343px;
+  }
+
+  @include desktop {
+    width: auto;
   }
 }
 
@@ -82,9 +106,11 @@
   }
 
   @include desktop {
+    position: relative;
     width: 100px;
     height: 100px;
-    left: 50px;
+    left: 52px;
+    top: 9px;
   }
 }
 
@@ -103,6 +129,9 @@
   @include desktop {
     width: 70px;
     height: 97px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -58%);
   }
 }
 
@@ -121,6 +150,9 @@
   @include desktop {
     width: 134px;
     height: 56px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -137,6 +169,11 @@
     line-height: 36px;
     margin: 0 0 25px 53px;
   }
+
+  @include desktop {
+    margin: 66px 0 50px;
+    width: 62%;
+  }
 }
 
 .program-selection__button {
@@ -150,7 +187,7 @@
   @include tablet {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 52px;
+    margin: 0 0 47px 52px;
   }
 
   &:hover .icon-arrow {

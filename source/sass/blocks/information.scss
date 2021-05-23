@@ -5,6 +5,10 @@
     padding: 0;
     margin-bottom: 43px;
   }
+
+  @include desktop {
+    margin-bottom: 11px;
+  }
 }
 
 .information__wrapper {
@@ -24,6 +28,10 @@
     line-height: 60px;
     margin-bottom: 71px;
   }
+
+  @include desktop {
+    margin-bottom: 72px;
+  }
 }
 
 .information__list {
@@ -39,6 +47,9 @@
 
   @include desktop {
     grid-template-columns: repeat(4, 1fr);
+    gap: 79px 80px;
+    border: none;
+    padding: 0;
   }
 }
 
@@ -112,5 +123,9 @@
     font-size: 16px;
     line-height: 24px;
     width: calc(100% - 65px);
+  }
+
+  @include desktop {
+    width: 100%;
   }
 }

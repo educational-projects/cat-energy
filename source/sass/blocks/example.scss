@@ -1,5 +1,6 @@
 .example {
   background-color: #eaeaea;
+  padding-bottom: 36px;
 }
 
 .example__wrapper {
@@ -27,6 +28,11 @@
     line-height: 60px;
     padding: 0;
     margin-bottom: 64px;
+  }
+
+  @include desktop {
+    margin-bottom: 147px;
+    padding-top: 60px;
   }
 }
 
@@ -124,8 +130,51 @@
   }
 }
 
+.example__sample {
+  @include tablet {
+    margin: 0 auto;
+  }
+}
+
+.example__slider {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 23px;
+  height: 240px;
+
+  @include tablet {
+    align-items: flex-end;
+    position: relative;
+    height: 567px;
+    overflow: hidden;
+  }
+}
+
+.example__picture {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+
+  & img {
+    @include tablet {
+      display: inline-block;
+      vertical-align: middle;
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+.example__picture--after {
+  display: none;
+}
+
 .example__filter {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 33px 0 38px;
 }
 
 .example__button {
@@ -144,10 +193,6 @@
     line-height: 30px;
     border-bottom: 1px dotted #000000;
   }
-}
-
-.example__picture--after {
-  display: none;
 }
 
 .example__scale {

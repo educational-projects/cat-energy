@@ -22,7 +22,7 @@
 
 .main-nav__item--current {
   @include tablet {
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     border-bottom: 2px solid #68b738;
   }
 }
