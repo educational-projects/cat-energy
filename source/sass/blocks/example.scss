@@ -243,10 +243,10 @@
   @include tablet {
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 1px dotted rgba( #000000, 0.4);
+    border-bottom: 1px dotted rgba(#000000, 0.4);
 
     &:hover {
-      border-bottom: 1px solid rgba( #000000, 0.4);
+      border-bottom: 1px solid rgba(#000000, 0.4);
     }
 
     &:active {
@@ -290,7 +290,7 @@
     border-radius: 50%;
     background: #ffffff;
     border: 1px solid #cdcdcd;
-    box-shadow: (0px 1px 3px rgba(0, 0, 0, 0.16));
+    box-shadow: (0 1px 3px rgba(0, 0, 0, 0.16));
 
     &::before {
       position: absolute;
@@ -304,11 +304,11 @@
     }
 
     &:hover {
-      box-shadow: (0px 2px 4px rgba(0, 0, 0, 0.19));
+      box-shadow: (0 2px 4px rgba(0, 0, 0, 0.19));
     }
 
     &:active {
-      box-shadow: (0px 3px 5px rgba(0, 0, 0, 0.2));
+      box-shadow: (0 3px 5px rgba(0, 0, 0, 0.2));
       border: 1px solid #68b738;
     }
   }
