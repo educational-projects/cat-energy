@@ -63,11 +63,13 @@
   }
 
   &:focus {
-    border: 2px solid #444444;
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 2px #444444;
     outline: none;
   }
 
   &:invalid:focus {
     border-color: #ff8282;
+    box-shadow: 0 0 0 2px #ff8282;
   }
 }

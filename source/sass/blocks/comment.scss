@@ -77,4 +77,14 @@
     min-height: 174px;
     padding: 8px 0 0 18px;
   }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 2px #444444;
+    outline: none;
+  }
 }
