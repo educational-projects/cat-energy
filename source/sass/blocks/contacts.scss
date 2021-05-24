@@ -115,13 +115,13 @@
   border: 1px solid #e7e7e7;
   height: 45px;
   width: 100%;
-  padding-left: 15px;
+  padding: 0 40px 0 15px;
 
   @include tablet {
     height: 50px;
     font-size: 20px;
     line-height: 30px;
-    padding-left: 19px;
+    padding: 0 55px 0 19px;
   }
 
   &::placeholder {
@@ -133,7 +133,8 @@
   }
 
   &:focus {
-    border: 2px solid #444444;
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 2px #444444;
     outline: none;
 
     & + .contacts__icon--phone {
@@ -147,6 +148,7 @@
 
   &:invalid:focus {
     border-color: #ff8282;
+    box-shadow: 0 0 0 2px #ff8282;
 
     & + .contacts__icon--phone {
       fill: #ff8282;

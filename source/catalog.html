@@ -11,7 +11,7 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a href="index.html" class="page-header__logo">
+        <a href="index.html" class="page-header__link">
           <picture>
             <source
               media="(min-width: 1440px)"
@@ -22,6 +22,7 @@
               srcset="img/logo/logo-tablet.svg"
             />
             <img
+              class="page-header__logo"
               src="img/logo/logo-mobile.svg"
               width="190"
               height="38"
@@ -37,8 +38,8 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html"> Главная </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__item--current"> Каталог продукции </a>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link"> Каталог продукции </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html"> Подбор программы </a>
@@ -445,7 +446,7 @@
                 </svg>
               </div>
               <p class="additional-products__bonus-text">
-                Закажите все и&nbspполучите чехол для кота в подарок!
+                Закажите все и&nbsp;получите чехол для кота в подарок!
               </p>
             </div>
           </div>
@@ -457,15 +458,13 @@
       <h2 class="visually-hidden">Контактная информация</h2>
       <div class="page-footer__address address">
         <div class="address__wrapper">
-          <b class="address__title"> Приглашаем к&nbsp;сотрудничеству дилеров! </b>
+          <b class="address__title">
+            Приглашаем к&nbsp;сотрудничеству дилеров!
+          </b>
           <div class="address__text">
-            <p class="address__street">
-              ул. Большая Конюшенная, д. 19/8
-            </p>
+            <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
             <p class="address__city">Санкт-Петербург</p>
           </div>
-        </div>
-      </div>
         </div>
       </div>
       <div class="page-footer__map">
@@ -479,53 +478,44 @@
         ></iframe>
       </div>
       <div class="page-footer__wrapper">
-          <svg class="icon-cat-enyrgy" width="128" height="24">
-            <use xlink:href="img/sprite/sprite.svg#cat-energy"></use>
+        <svg class="icon-cat-enyrgy" width="128" height="24">
+          <use xlink:href="img/sprite/sprite.svg#cat-energy"></use>
         </svg>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a
-                class="social__link"
-                href="#"
-                aria-label="Мы в Вконткате"
-              >
-              <svg class="social__icon icon-vkontakte" width="23" height="16">
-                <use xlink:href="img/sprite/sprite.svg#vkontakte"></use>
-              </svg>
+              <a class="social__link" href="#" aria-label="Мы в Вконткате">
+                <svg class="social__icon icon-vkontakte" width="23" height="16">
+                  <use xlink:href="img/sprite/sprite.svg#vkontakte"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a
-                class="social__link"
-                href="#"
-                aria-label="Мы в Интсаграме"
-              >
-              <svg class="social__icon icon-instagram" width="23" height="16">
-                <use xlink:href="img/sprite/sprite.svg#instagram"></use>
-              </svg>
+              <a class="social__link" href="#" aria-label="Мы в Интсаграме">
+                <svg class="social__icon icon-instagram" width="23" height="16">
+                  <use xlink:href="img/sprite/sprite.svg#instagram"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a
-                class="social__link"
-                href="#"
-                aria-label="Мы в Фейсбуке"
-              >
-              <svg class="social__icon icon-facebook" width="23" height="16">
-                <use xlink:href="img/sprite/sprite.svg#facebook"></use>
-              </svg>
+              <a class="social__link" href="#" aria-label="Мы в Фейсбуке">
+                <svg class="social__icon icon-facebook" width="23" height="16">
+                  <use xlink:href="img/sprite/sprite.svg#facebook"></use>
+                </svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__partners partners">
-          <a class="partners__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="partners__text">HTML Academy</p>
-          <svg class="icon-htmlacademy" width="27" height="34">
-            <use xlink:href="img/sprite/sprite.svg#htmlacademy"></use>
-          </svg>
-        </a>
+          <a
+            class="partners__link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+          >
+            <p class="partners__text">HTML Academy</p>
+            <svg class="icon-htmlacademy" width="27" height="34">
+              <use xlink:href="img/sprite/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

@@ -11,7 +11,7 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
+        <a href="index.html" class="page-header__link">
           <picture>
             <source
               media="(min-width: 1440px)"
@@ -22,6 +22,7 @@
               srcset="img/logo/logo-tablet.svg"
             />
             <img
+              class="page-header__logo"
               src="img/logo/logo-mobile.svg"
               width="190"
               height="38"
@@ -29,7 +30,12 @@
             />
           </picture>
         </a>
-        <nav class="page-header__nav main-nav main-nav--white-link main-nav--closed main-nav--nojs">
+        <nav
+          class="
+            page-header__nav
+            main-nav main-nav--white-link main-nav--closed main-nav--nojs
+          "
+        >
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -55,6 +61,15 @@
           <h1 class="intro__title">Функциональное питание для котов</h1>
           <p class="intro__text">Занялся собой? Займись котом!</p>
           <div class="intro__image">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  img/intro/index-can-mobile@1x.webp 1x,
+                  img/intro/index-can-mobile@2x.webp 2x
+                "
+              />
+
               <img
                 src="img/intro/index-can-mobile@1x.png"
                 srcset="img/intro/index-can-mobile@2x.png 2x"
@@ -62,6 +77,7 @@
                 height="270"
                 alt="Баночка корма Cat energy"
               />
+            </picture>
           </div>
           <a class="intro__button" href="form.html">Подобрать программу</a>
         </div>
@@ -185,12 +201,24 @@
             </div>
           </div>
           <p class="example__price">
-            <span>Затраты на питание:</span><span class="example__price-value">15 000 Руб.</span>
+            <span>Затраты на питание:</span
+            ><span class="example__price-value">15 000 Руб.</span>
           </p>
           <div class="example__sample">
             <div class="example__slider">
               <div class="example__picture example__picture--before">
                 <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/example/before-mobile@1x.webp 1x,
+                      img/example/before-mobile@2x.webp 2x
+                    "
+                  />
+                  <source type="image/webp" media="(min-width: 768)"
+                  srcset="img/example/before-tablet@1x.webp 1x,
+                  img/example/before-tablet@2x.webp 2x">
+
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -243,15 +271,13 @@
       <h2 class="visually-hidden">Контактная информация</h2>
       <div class="page-footer__address address address--white-background">
         <div class="address__wrapper">
-          <b class="address__title"> Приглашаем к&nbsp;сотрудничеству дилеров! </b>
+          <b class="address__title">
+            Приглашаем к&nbsp;сотрудничеству дилеров!
+          </b>
           <div class="address__text">
-            <p class="address__street">
-              ул. Большая Конюшенная, д. 19/8
-            </p>
+            <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
             <p class="address__city">Санкт-Петербург</p>
           </div>
-        </div>
-      </div>
         </div>
       </div>
       <div class="page-footer__map">
@@ -265,53 +291,44 @@
         ></iframe>
       </div>
       <div class="page-footer__wrapper">
-          <svg class="icon-cat-enyrgy" width="128" height="24">
-            <use xlink:href="img/sprite/sprite.svg#cat-energy"></use>
+        <svg class="icon-cat-enyrgy" width="128" height="24">
+          <use xlink:href="img/sprite/sprite.svg#cat-energy"></use>
         </svg>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a
-                class="social__link"
-                href="#"
-                aria-label="Мы в Вконткате"
-              >
-              <svg class="social__icon icon-vkontakte" width="23" height="16">
-                <use xlink:href="img/sprite/sprite.svg#vkontakte"></use>
-              </svg>
+              <a class="social__link" href="#" aria-label="Мы в Вконткате">
+                <svg class="social__icon icon-vkontakte" width="23" height="16">
+                  <use xlink:href="img/sprite/sprite.svg#vkontakte"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a
-                class="social__link"
-                href="#"
-                aria-label="Мы в Интсаграме"
-              >
-              <svg class="social__icon icon-instagram" width="23" height="16">
-                <use xlink:href="img/sprite/sprite.svg#instagram"></use>
-              </svg>
+              <a class="social__link" href="#" aria-label="Мы в Интсаграме">
+                <svg class="social__icon icon-instagram" width="23" height="16">
+                  <use xlink:href="img/sprite/sprite.svg#instagram"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a
-                class="social__link"
-                href="#"
-                aria-label="Мы в Фейсбуке"
-              >
-              <svg class="social__icon icon-facebook" width="23" height="16">
-                <use xlink:href="img/sprite/sprite.svg#facebook"></use>
-              </svg>
+              <a class="social__link" href="#" aria-label="Мы в Фейсбуке">
+                <svg class="social__icon icon-facebook" width="23" height="16">
+                  <use xlink:href="img/sprite/sprite.svg#facebook"></use>
+                </svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__partners partners">
-          <a class="partners__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="partners__text">HTML Academy</p>
-          <svg class="icon-htmlacademy" width="27" height="34">
-            <use xlink:href="img/sprite/sprite.svg#htmlacademy"></use>
-          </svg>
-        </a>
+          <a
+            class="partners__link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+          >
+            <p class="partners__text">HTML Academy</p>
+            <svg class="icon-htmlacademy" width="27" height="34">
+              <use xlink:href="img/sprite/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

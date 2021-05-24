@@ -234,6 +234,7 @@
   border: none;
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
 
   @include font-weight-normal;
   color: #000000;
@@ -251,6 +252,7 @@
 
     &:active {
       border: none;
+      padding-bottom: 2px;
     }
   }
 }
@@ -274,6 +276,7 @@
 
 .example__bar {
   position: absolute;
+  cursor: pointer;
   top: 3px;
   left: 2px;
   width: 35px;
