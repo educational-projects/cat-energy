@@ -3,14 +3,43 @@
   flex-direction: column;
 
   @include tablet {
+    @include container;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  @include desktop {
+    padding-top: 27px;
+    margin: 0 auto;
   }
 }
 
 .page-header__logo {
+  width: 227px;
   padding: 0 20px;
   margin-top: 12px;
   margin-bottom: 14px;
+
+  @include tablet {
+    padding: 0;
+    width: 174px;
+    height: 52px;
+    margin-top: 24px;
+  }
+
+  @include desktop {
+    width: 202px;
+    height: 60px;
+    margin-top: 27px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

@@ -1,37 +1,14 @@
-@mixin container-mob {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-@mixin container-tabl {
-  width: 100%;
-  padding: 0 30px;
-}
-
-@mixin container-desk {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 110px;
-}
-
 @mixin reset-indents {
   margin: 0;
   padding: 0;
 }
 
-@mixin arial-text-mob {
+@mixin arial-text {
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
 }
 
-@mixin arial-text-catalog {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  color: #444444;
+@mixin Oswald-text {
+  font-family: "Oswald", sans-serif;
 }
 
 @mixin font-weight-normal {
@@ -61,10 +38,12 @@
 
   @include desktop {
     padding: 0 110px;
+    width: 1440px;
   }
 }
 
 @mixin button {
+  @include Oswald-text;
   display: block;
   text-decoration: none;
   color: #ffffff;
@@ -76,11 +55,25 @@
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
-  min-width: 100%;
+  width: 100%;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @mixin mobile-only {
   @media (max-width: 767px) {
     @content;
+  }
+}
+
+@mixin form-tablet-indent {
+  @media (min-width: 768px) and (max-width: 1439px) {
+    padding-left: 70px;
   }
 }

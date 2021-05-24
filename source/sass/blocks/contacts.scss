@@ -1,37 +1,181 @@
 .contacts {
   @include reset-indents;
   border: none;
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 67px;
+  }
+
+  @include desktop {
+    width: 100%;
+    margin-bottom: 69px;
+  }
 }
 
 .contacts__title {
   @include font-weight-normal;
+  @include reset-indents;
+  display: inline-block;
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  margin-bottom: 35px;
+  width: 200px;
 
   @include tablet {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 77px;
+    width: auto;
+  }
+
+  @include desktop {
+    margin-bottom: 75px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: calc(100vw - 100% - 1px);
+    background: #68b738;
+    right: calc(100% + 40px);
+    top: 15px;
+    box-shadow: calc(100vw + 40px) 0 0 #68b738;
+
+    @include tablet {
+      top: 21px;
+      width: calc(100vw - 100% - 40px);
+    }
+  }
+}
+
+.contacts__content {
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 .contacts__item {
+  position: relative;
   display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+  white-space: nowrap;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @include tablet {
     font-size: 20px;
     line-height: 30px;
+    margin: 0 36px 20px 0;
+  }
+
+  @include desktop {
+    margin: 0;
+    width: 47%;
+  }
+}
+
+.contacts__item label {
+  text-transform: uppercase;
+}
+
+.contacts__label--email {
+  margin-right: 10px;
+
+  @include tablet {
+    margin-right: 20px;
+  }
+}
+
+.contacts__label--phone {
+  margin-right: 10px;
+
+  @include tablet {
+    margin-right: 14px;
   }
 }
 
 .contacts__item input {
+  @include Oswald-text;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   height: 45px;
   width: 100%;
+  padding-left: 15px;
+
+  @include tablet {
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 19px;
+  }
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+    outline: none;
+
+    & + .contacts__icon--phone {
+      fill: #68b738;
+    }
+
+    & + .contacts__icon--email {
+      stroke: #68b738;
+    }
+  }
+
+  &:invalid:focus {
+    border-color: #ff8282;
+
+    & + .contacts__icon--phone {
+      fill: #ff8282;
+    }
+
+    & + .contacts__icon--email {
+      stroke: #ff8282;
+    }
+  }
+}
+
+.contacts__icon {
+  position: absolute;
+  right: 14px;
+  border: none;
+
+  @include tablet {
+    right: 17px;
+  }
+
+  @include desktop {
+    right: 19px;
+  }
+}
+
+.contacts__icon--phone {
+  fill: #000000;
+}
+
+.contacts__icon--email {
+  stroke: #000000;
 }

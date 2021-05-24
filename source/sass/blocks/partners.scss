@@ -1,0 +1,45 @@
+.partners__list {
+  @include reset-indents;
+  list-style: none;
+}
+
+.partners__link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #444444;
+}
+
+.partners__text {
+  @include arial-text;
+  @include reset-indents;
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 7px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @include tablet {
+    margin: 6px 24px 0 0;
+  }
+
+  @include desktop {
+    margin: 9px 24px 0 0;
+  }
+}
+
+.icon-htmlacademy {
+  width: 27px;
+  height: 34px;
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

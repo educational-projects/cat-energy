@@ -1,3 +1,40 @@
+.page-footer {
+  background-color: #f2f2f2;
+
+  @include desktop {
+    position: relative;
+  }
+}
+
 .page-footer__wrapper {
-  @include container;
+  padding: 38px 20px 32px;
+  text-align: center;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 93px 30px 34px;
+  }
+
+  @include desktop {
+    padding: 96px 110px 56px;
+  }
+}
+
+.icon-cat-enyrgy {
+  margin-bottom: 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @include tablet {
+    margin: 0 28px 0 0;
+  }
 }

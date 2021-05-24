@@ -1,21 +1,62 @@
 .comment {
   @include reset-indents;
   border: none;
+  margin-bottom: 23px;
+
+  @include tablet {
+    margin-bottom: 63px;
+  }
+
+  @include desktop {
+    width: 100%;
+    margin-bottom: 64px;
+  }
 }
 
 .comment__title {
+  @include reset-indents;
   @include font-weight-normal;
+  position: relative;
+  display: inline-block;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  margin-bottom: 38px;
 
   @include tablet {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 77px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: calc(100vw - 100% - 23px);
+    background: #68b738;
+    right: calc(100% + 40px);
+    top: 15px;
+    box-shadow: calc(100vw + 40px) 0 0 #68b738;
+
+    @include tablet {
+      top: 22px;
+      width: calc(100vw - 100% - 40px);
+    }
   }
 }
 
-textarea {
+.comment__item {
+  @include tablet {
+    margin-right: 37px;
+  }
+
+  @include desktop {
+    margin-right: 0;
+  }
+}
+
+.comment__item textarea {
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -23,11 +64,17 @@ textarea {
   width: 100%;
   min-height: 150px;
   resize: none;
+  padding: 8px 0 0 14px;
 
+  &::placeholder {
+    @include Oswald-text;
+    text-transform: uppercase;
+  }
 
   @include tablet {
     font-size: 20px;
     line-height: 30px;
     min-height: 174px;
+    padding: 8px 0 0 18px;
   }
 }

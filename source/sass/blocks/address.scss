@@ -1,18 +1,75 @@
+.address {
+  padding: 27px 20px 25px;
+
+  @include tablet {
+    padding: 67px 71px 59px;
+  }
+
+  @include desktop {
+    position: absolute;
+    top: 97px;
+    left: 110px;
+    padding: 66px 78px 58px 76px;
+    background-color: #ffffff;
+  }
+}
+
+.address--white-background {
+  background-color: #ffffff;
+}
+
 .address__wrapper {
-  @include container;
   display: flex;
   justify-content: space-between;
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .address__title {
   @include font-weight-normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  max-width: 140px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @include desktop {
+    margin-right: 110px;
+  }
 }
 
 .address__text {
-  margin: 0;
-
-  @include arial-text-mob;
+  @include arial-text;
+  font-size: 14px;
   line-height: 20px;
+  color: #444444;
+  max-width: 140px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    max-width: 165px;
+  }
+
+  @include desktop {
+    text-align: left;
+  }
+}
+
+.address__street {
+  @include reset-indents;
+}
+
+.address__city {
+  @include reset-indents;
 }

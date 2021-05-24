@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+hml" />
   </head>
-  <body class="page__body no-js">
+  <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
@@ -27,21 +29,21 @@
             />
           </picture>
         </a>
-        <nav class="page-header__nav main-nav">
+        <nav class="page-header__nav main-nav main-nav--white-link main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link main-nav__link--white-link"> Главная </a>
+              <a class="main-nav__link"> Главная </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--white-link" href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--white-link" href="form.html"> Подбор программы </a>
+              <a class="main-nav__link" href="form.html"> Подбор программы </a>
             </li>
           </ul>
         </nav>
@@ -52,28 +54,15 @@
         <div class="intro__wrapper">
           <h1 class="intro__title">Функциональное питание для котов</h1>
           <p class="intro__text">Занялся собой? Займись котом!</p>
-          <picture>
-            <source
-              media="(min-width: 1440px)"
-              srcset="
-                img/intro/index-can-desktop@1x.png 1x,
-                img/intro/index-can-desktop@2x.png 2x
-              "
-            />
-            <source
-            media="(min-width: 768px)"
-              srcset="
-                img/intro/index-can-tablet@1x.jpg 1x,
-                img/intro/index-can-tablet@2x.jpg 2x
-              ">
-            <img class="intro__image"
-              src="img/intro/index-can-mobile@1x.png"
-              srcset="img/intro/index-can-mobile@2x.png 2x"
-              width="280"
-              height="270"
-              alt="Баночка корма Cat energy"
-            />
-          </picture>
+          <div class="intro__image">
+              <img
+                src="img/intro/index-can-mobile@1x.png"
+                srcset="img/intro/index-can-mobile@2x.png 2x"
+                width="280"
+                height="270"
+                alt="Баночка корма Cat energy"
+              />
+          </div>
           <a class="intro__button" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -82,23 +71,45 @@
         <div class="program-selection__wrapper">
           <ul class="program-selection__list">
             <li class="program-selection__item">
-                <div class="program-selection__icon"></div>
-                <h3 class="program-selection__title">Похудение</h3>
+              <div class="program-selection__icon">
+                <svg class="icon-cat-slim">
+                  <use xlink:href="img/sprite/sprite.svg#cat-slim"></use>
+                </svg>
+              </div>
+              <h3 class="program-selection__title">Похудение</h3>
               <p class="program-selection__text">
                 Ваш кот весит больше собаки и почти утратил способность лазить
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
-              <a class="program-selection__button" href="#">Каталог slim</a>
+              <a class="program-selection__button" href="#"
+                >Каталог slim
+                <svg class="icon-arrow" width="24" height="12">
+                  <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
             </li>
             <li class="program-selection__item">
-              <div class="program-selection__icon"></div>
+              <div class="program-selection__icon">
+                <svg class="icon-cat-pro">
+                  <use xlink:href="img/sprite/sprite.svg#cat-pro"></use>
+                </svg>
+              </div>
               <h3 class="program-selection__title">Набор массы</h3>
-              <p class="program-selection__text">
-                Заработать авторитет среди дворовых котор и даже собак? Серия
+              <p
+                class="
+                  program-selection__text program-selection__text--min-text
+                "
+              >
+                Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a class="program-selection__button" href="#">Каталог pro</a>
+              <a class="program-selection__button" href="#"
+                >Каталог pro
+                <svg class="icon-arrow">
+                  <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -107,32 +118,48 @@
         <div class="information__wrapper">
           <h3 class="information__title">Как это работает</h3>
           <ul class="information__list">
-            <li class="information__item information__item--natural">
-              <div class="information__icon"></div>
+            <li class="information__item">
+              <div class="information__icon">
+                <svg width="30" height="32" class="icon-leaf">
+                  <use xlink:href="img/sprite/sprite.svg#leaf"></use>
+                </svg>
+              </div>
               <p class="information__text">
                 Функциональное питание содержит только полезные питательные
                 вещества.
               </p>
             </li>
-            <li class="information__item information__item--light">
-              <div class="information__icon"></div>
+            <li class="information__item">
+              <div class="information__icon">
+                <svg width="29" height="31" class="icon-tub">
+                  <use xlink:href="img/sprite/sprite.svg#tub"></use>
+                </svg>
+              </div>
               <p class="information__text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и
                 готово.
               </p>
             </li>
-            <li class="information__item information__item--replacement">
-              <div class="information__icon"></div>
+            <li class="information__item">
+              <div class="information__icon">
+                <svg class="icon-eat">
+                  <use xlink:href="img/sprite/sprite.svg#eat"></use>
+                </svg>
+              </div>
               <p class="information__text">
                 Замените один-два приема обычной еды на наше Функциональное
                 питание.
               </p>
             </li>
-            <li class="information__item information__item--fast">
-              <div class="information__icon"></div>
+            <li class="information__item">
+              <div class="information__icon">
+                <svg class="icon-alarm">
+                  <use xlink:href="img/sprite/sprite.svg#alarm"></use>
+                </svg>
+              </div>
               <p class="information__text">
-                уже через месяц наслаждайстесь изменениями к лучшему вашего
-                питомца!
+                Уже через месяц наслаждайтесь изменениями к лучшему
+                вашего&nbsp;питомца!
               </p>
             </li>
           </ul>
@@ -150,31 +177,57 @@
           <div class="example__list">
             <div class="example__item">
               <b class="example__unit">5 кг</b>
-              <p class="example__desc">Снижение веса</p>
+              <p class="example__desc">снижение веса</p>
             </div>
             <div class="example__item">
               <b class="example__unit">60 Дней</b>
-              <p class="example__desc">Затрачено времени</p>
+              <p class="example__desc">затрачено времени</p>
             </div>
           </div>
           <p class="example__price">
-            <span>Затраты на питание:</span><span>15 000 Руб.</span>
+            <span>Затраты на питание:</span><span class="example__price-value">15 000 Руб.</span>
           </p>
           <div class="example__sample">
-            <img class="example__img example__img--before"
-              src="img/example/before-mobile@1x.png"
-              srcset="img/example/before-mobile@2x.png 2x"
-              width="311"
-              height="232"
-              alt="кот с лишним весом"
-            />
-            <img class="example__img example__img--after"
-              src="img/example/after-mobile@1x.png"
-              srcset="img/example/after-mobile@2x.png"
-              width="311"
-              height="232"
-              alt="Стройный кот"
-            />
+            <div class="example__slider">
+              <div class="example__picture example__picture--before">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/example/before-tablet@1x.png 1x,
+                      img/example/before-tablet@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="example__img"
+                    src="img/example/before-mobile@1x.png"
+                    srcset="img/example/before-mobile@2x.png 2x"
+                    width="311"
+                    height="232"
+                    alt="кот с лишним весом"
+                  />
+                </picture>
+              </div>
+              <div class="example__picture example__picture--after">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/example/after-tablet@1x.png 1x,
+                      img/example/after-tablet@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="example__img"
+                    src="img/example/after-mobile@1x.png"
+                    srcset="img/example/after-mobile@2x.png"
+                    width="311"
+                    height="240"
+                    alt="Стройный кот"
+                  />
+                </picture>
+              </div>
+            </div>
             <div class="example__filter">
               <button type="button" class="example__button">Было</button>
               <div class="example__scale">
@@ -186,14 +239,19 @@
         </div>
       </section>
     </main>
-    <footer class="page__footer">
+    <footer class="page__footer page-footer">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="page-footer__address address">
+      <div class="page-footer__address address address--white-background">
         <div class="address__wrapper">
-          <b class="address__title"> Приглашаем к сотрудничеству дилеров! </b>
-          <p class="address__text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
+          <b class="address__title"> Приглашаем к&nbsp;сотрудничеству дилеров! </b>
+          <div class="address__text">
+            <p class="address__street">
+              ул. Большая Конюшенная, д. 19/8
+            </p>
+            <p class="address__city">Санкт-Петербург</p>
+          </div>
+        </div>
+      </div>
         </div>
       </div>
       <div class="page-footer__map">
@@ -207,77 +265,55 @@
         ></iframe>
       </div>
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo"></div>
+          <svg class="icon-cat-enyrgy" width="128" height="24">
+            <use xlink:href="img/sprite/sprite.svg#cat-energy"></use>
+        </svg>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a
-                class="social__link social__link--vkontakte"
+                class="social__link"
                 href="#"
                 aria-label="Мы в Вконткате"
               >
-                <svg width="23" height="16" fill="#666666">
-                  <use xlink:href="sprite.svg#vk-icon"></use>
-                </svg>
+              <svg class="social__icon icon-vkontakte" width="23" height="16">
+                <use xlink:href="img/sprite/sprite.svg#vkontakte"></use>
+              </svg>
               </a>
             </li>
             <li class="social__item">
               <a
-                class="social__link social__link--instagram"
+                class="social__link"
                 href="#"
                 aria-label="Мы в Интсаграме"
               >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.98438 0.0625C9.31771 0.0625 10.4062 0.078125 11.25 0.109375C11.9688 0.140625 12.6094 0.265625 13.1719 0.484375C13.7135 0.692708 14.1823 0.994792 14.5781 1.39062C14.974 1.78646 15.276 2.25521 15.4844 2.79687C15.7031 3.35937 15.8281 4 15.8594 4.71875C15.8906 5.5625 15.9062 6.65104 15.9062 7.98437C15.9062 9.31771 15.8906 10.4062 15.8594 11.25C15.8281 11.9687 15.7031 12.6094 15.4844 13.1719C15.276 13.7135 14.974 14.1823 14.5781 14.5781C14.1823 14.974 13.7135 15.276 13.1719 15.4844C12.6094 15.7031 11.9688 15.8281 11.25 15.8594C10.4062 15.8906 9.31771 15.9062 7.98438 15.9062C6.65104 15.9062 5.5625 15.8906 4.71875 15.8594C4 15.8281 3.35938 15.7031 2.79688 15.4844C2.25521 15.276 1.78646 14.974 1.39062 14.5781C0.994792 14.1823 0.692708 13.7135 0.484375 13.1719C0.265625 12.6094 0.140625 11.9687 0.109375 11.25C0.078125 10.4062 0.0625 9.31771 0.0625 7.98437C0.0625 6.65104 0.078125 5.5625 0.109375 4.71875C0.140625 4 0.265625 3.35937 0.484375 2.79687C0.692708 2.25521 0.994792 1.78646 1.39062 1.39062C1.78646 0.994792 2.25521 0.692708 2.79688 0.484375C3.35938 0.265625 4 0.140625 4.71875 0.109375C5.5625 0.078125 6.65104 0.0625 7.98438 0.0625ZM7.98438 1.09375C6.59896 1.09375 5.46875 1.10937 4.59375 1.14062C4.03125 1.16146 3.51042 1.26042 3.03125 1.4375C2.28125 1.75 1.75 2.28125 1.4375 3.03125C1.26042 3.51042 1.16146 4.03125 1.14062 4.59375C1.10938 5.46875 1.09375 6.59896 1.09375 7.98437C1.09375 9.36979 1.10938 10.5 1.14062 11.375C1.16146 11.9375 1.26042 12.4583 1.4375 12.9375C1.75 13.6875 2.28125 14.2187 3.03125 14.5312C3.51042 14.7083 4.03125 14.8073 4.59375 14.8281C5.46875 14.8594 6.59896 14.875 7.98438 14.875C9.36979 14.875 10.5 14.8594 11.375 14.8281C11.9375 14.8073 12.4583 14.7083 12.9375 14.5312C13.6875 14.2187 14.2188 13.6875 14.5312 12.9375C14.7083 12.4583 14.8073 11.9375 14.8281 11.375C14.8594 10.5 14.875 9.36979 14.875 7.98437C14.875 6.59896 14.8594 5.46875 14.8281 4.59375C14.8073 4.03125 14.7083 3.51042 14.5312 3.03125C14.2188 2.28125 13.6875 1.75 12.9375 1.4375C12.4583 1.26042 11.9375 1.16146 11.375 1.14062C10.5 1.10937 9.36979 1.09375 7.98438 1.09375ZM7.98438 11.1562C8.85938 11.1562 9.60677 10.8464 10.2266 10.2266C10.8464 9.60677 11.1562 8.85937 11.1562 7.98437C11.1562 7.10937 10.8464 6.36198 10.2266 5.74219C9.60677 5.1224 8.85938 4.8125 7.98438 4.8125C7.10938 4.8125 6.36198 5.1224 5.74219 5.74219C5.1224 6.36198 4.8125 7.10937 4.8125 7.98437C4.8125 8.85937 5.1224 9.60677 5.74219 10.2266C6.36198 10.8464 7.10938 11.1562 7.98438 11.1562ZM7.98438 3.92187C9.10938 3.92187 10.0677 4.31771 10.8594 5.10937C11.651 5.90104 12.0469 6.85937 12.0469 7.98437C12.0469 9.10937 11.651 10.0677 10.8594 10.8594C10.0677 11.651 9.10938 12.0469 7.98438 12.0469C6.85938 12.0469 5.90104 11.651 5.10938 10.8594C4.31771 10.0677 3.92188 9.10937 3.92188 7.98437C3.92188 6.85937 4.31771 5.90104 5.10938 5.10937C5.90104 4.31771 6.85938 3.92187 7.98438 3.92187ZM13.1719 3.76562C13.1719 4.02604 13.0781 4.2474 12.8906 4.42969C12.7031 4.61198 12.474 4.70312 12.2031 4.70312C11.9427 4.70312 11.7214 4.61198 11.5391 4.42969C11.3568 4.2474 11.2656 4.02604 11.2656 3.76562C11.2656 3.49479 11.3568 3.26562 11.5391 3.07812C11.7214 2.89062 11.9427 2.79687 12.2031 2.79687C12.4635 2.79687 12.6901 2.89323 12.8828 3.08594C13.0755 3.27865 13.1719 3.50521 13.1719 3.76562Z"
-                    fill="#666666"
-                  />
-                </svg>
+              <svg class="social__icon icon-instagram" width="23" height="16">
+                <use xlink:href="img/sprite/sprite.svg#instagram"></use>
+              </svg>
               </a>
             </li>
             <li class="social__item">
               <a
-                class="social__link social__link--facebook"
+                class="social__link"
                 href="#"
                 aria-label="Мы в Фейсбуке"
               >
-                <svg
-                  width="13"
-                  height="20"
-                  viewBox="0 0 13 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.5 0.833252H8.75001C7.53443 0.833252 6.36864 1.30674 5.5091 2.14957C4.64956 2.99239 4.16667 4.1355 4.16667 5.32743V8.02394H1.41667V11.6193H4.16667V18.81H7.83334V11.6193H10.5833L11.5 8.02394H7.83334V5.32743C7.83334 5.08905 7.92992 4.86042 8.10182 4.69186C8.27373 4.52329 8.50689 4.4286 8.75001 4.4286H11.5V0.833252Z"
-                    stroke="#666666"
-                    stroke-width="1.1"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+              <svg class="social__icon icon-facebook" width="23" height="16">
+                <use xlink:href="img/sprite/sprite.svg#facebook"></use>
+              </svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__partners partners">
-          <a class="partners__link" href="#">HTML academy</a>
+          <a class="partners__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="partners__text">HTML Academy</p>
+          <svg class="icon-htmlacademy" width="27" height="34">
+            <use xlink:href="img/sprite/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
         </div>
       </div>
     </footer>
   </body>
-
-  <script>
-    var x = document.querySelector(".no-js");
-
-    if (x) {
-      x.classList.remove("no-js");
-    }
-  </script>
 </html>

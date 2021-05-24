@@ -1,21 +1,34 @@
+.catalog-block {
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 108px;
+  }
+
+  @include desktop {
+    margin-bottom: 107px;
+  }
+}
+
 .catalog-block__wrapper {
   @include container;
 }
 
 .catalog-block__title {
-  @include mobile-only {
-    border-bottom: 1px solid #ebebeb;
-    padding-bottom: 41px;
-  }
-
   @include reset-indents;
   @include font-weight-normal;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  margin-top: 30px;
 
   @include tablet {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 27px;
+  }
+
+  @include desktop {
+    margin-top: 60px;
   }
 }

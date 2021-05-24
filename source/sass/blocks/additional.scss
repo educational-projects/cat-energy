@@ -1,17 +1,48 @@
 .additional {
   @include reset-indents;
   border: none;
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 19px;
+  }
+
+  @include desktop {
+    width: 100%;
+    margin-bottom: 67px;
+  }
 }
 
 .additional__title {
   @include font-weight-normal;
+  @include reset-indents;
+  position: relative;
+  display: inline-block;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  margin-bottom: 38px;
 
   @include tablet {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 62px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: calc(100vw - 100% - 23px);
+    background: #68b738;
+    right: calc(100% + 40px);
+    top: 15px;
+    box-shadow: calc(100vw + 40px) 0 0 #68b738;
+
+    @include tablet {
+      top: 22px;
+      width: calc(100vw - 100% - 40px);
+    }
   }
 }
 
@@ -22,10 +53,12 @@
   @include tablet {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2px 19px;
   }
 
   @include desktop {
     grid-template-columns: repeat(4, 1fr);
+    gap: 0 80px;
   }
 }
 
@@ -34,9 +67,75 @@
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin: 0;
+  }
 
   @include tablet {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 41px;
   }
+
+  @include desktop {
+    margin: 0;
+  }
+}
+
+.additional__input {
+  display: none;
+}
+
+.additional__label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 46px;
+
+  @include tablet {
+    padding-left: 59px;
+  }
+}
+
+.additional__label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+
+  @include tablet {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+  }
+}
+
+.additional__input:checked + .additional__label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/checkbox-on.svg");
+
+  @include tablet {
+    top: 8px;
+    left: 11px;
+  }
+}
+
+//styleguide checkbox button//
+
+.additional__input:hover + .additional__label::before {
+  border: 1px solid #bababa;
+}
+
+.additional__input:disabled + .additional__label {
+  opacity: 30%;
 }

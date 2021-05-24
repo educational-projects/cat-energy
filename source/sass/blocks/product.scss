@@ -5,80 +5,243 @@
 .product__list {
   @include reset-indents;
   list-style: none;
+  margin-bottom: 26px;
+
+  @include mobile-only {
+    padding-top: 3px;
+    border-top: 1px solid #e6e6e6;
+  }
 
   @include tablet {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 85px 60px;
+    margin-bottom: 64px;
   }
 
   @include desktop {
     grid-template-columns: repeat(4, 1fr);
+    gap: 85px 80px;
+    margin-bottom: 73px;
   }
 }
 
 .product__item {
   @include mobile-only {
     border-bottom: 1px solid #ebebeb;
-    padding-bottom: 20px;
+    padding-bottom: 23px;
+    margin-bottom: 5px;
+  }
 
+  @include tablet {
+    padding: 0 37px;
+    background: linear-gradient(0deg, rgb(242, 242, 242) 88%, rgb(255, 255, 255) 88%);
+  }
+
+  @include desktop {
+    padding: 0 34px 0 40px;
+  }
+}
+
+.product__item--more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+
+  @include tablet {
+    border: 2px solid #f2f2f2;
+    margin-top: 56px;
+  }
+
+  @include desktop {
+    margin-top: 60px;
+  }
+
+  & .product__title {
+    color: #111111;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 8px;
+
+    @include tablet {
+      line-height: 22px;
+      margin: 0 45px 25px;
+    }
+
+    @include desktop {
+      margin: 0 0 23px;
+    }
+  }
+
+  & .product__text {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 20px 21px;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 18px;
+      margin: 0 20px 85px;
+    }
+
+    @include desktop {
+      margin: 0 0 85px;
+    }
+  }
+
+  & .product__button {
+    background-color: #f2f2f2;
+    color: #444444;
+  }
+
+  & .product__button:hover {
+    background-color: #ebebeb;
+  }
+
+  & .product__button:active {
+    color: rgba(#444444, 0.3);
+  }
+
+  & .product__decor {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    margin: 20px 0 25px;
+
+    @include tablet {
+      width: 60px;
+      height: 60px;
+      margin: 50px 0 49px;
+    }
+
+    @include desktop {
+      margin: 49px 0 50px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      top: 50%;
+      left: 0;
+      background: #d3d3d3;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      background: #d3d3d3;
+    }
+  }
+}
+
+.product__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 23px;
+
+  @include tablet {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+}
+
+.product__img {
+  height: 112px;
+
+
+  @include tablet {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+    margin-bottom: 17px;
+  }
+
+  @include desktop {
+    height: 196px;
+    margin-bottom: 26px;
+  }
+
+  & img {
+    padding: 16px 0;
+
+    @include tablet {
+      width: auto;
+    }
+  }
+}
+
+.product__stats tr {
+  display: flex;
+  justify-content: space-between;
+  height: 16px;
+
+  @include tablet {
+    margin-bottom: 7px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
 .product__title {
   @include reset-indents;
   @include font-weight-normal;
+  display: inline-block;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #222222;
+  margin: 17px 65px 12px 0;
 
   @include tablet {
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
+    margin: 0 50px 20px;
   }
 
   @include desktop {
     line-height: 21px;
+    margin: 0 15px 24px;
   }
 }
 
-.product__title--more {
-  color: #111111;
-  text-align: center;
-
-  @include tablet {
-    line-height: 22px;
-  }
-
-  @include desktop {
-    line-height: 22px;
-  }
-}
-
-td {
-  @include arial-text-catalog;
+.product__stats {
+  @include arial-text;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
 
   @include tablet {
     font-size: 16px;
-    line-height: 16px;
-    border-bottom: 1px solid #cdcdcd;
   }
 }
 
 .product__text {
-  @include arial-text-catalog;
-  text-align: center;
-
+  @include arial-text;
   @include reset-indents;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .product__button {
   @include button;
-}
 
-.product__button--more {
-  background-color: #f2f2f2;
-  color: #444444;
+  @include tablet {
+    margin-bottom: 40px;
+  }
 }
