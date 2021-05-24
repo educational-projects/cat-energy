@@ -35,12 +35,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+  background-color: #68b738;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro/index-background-mobile@2x.jpg");
   }
 
   @include tablet {
+    background-color: #ffffff;
     background-image: none;
   }
 

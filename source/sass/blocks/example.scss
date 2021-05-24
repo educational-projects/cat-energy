@@ -3,10 +3,12 @@
   padding-bottom: 36px;
 
   @include tablet {
+    background: linear-gradient(180deg, rgb(255, 255, 255) 56%, rgb(242, 242, 242) 56%);
     padding-bottom: 67px;
   }
 
   @include desktop {
+    background: linear-gradient(180deg, rgb(255, 255, 255) 30%, rgb(242, 242, 242) 30%);
     padding-bottom: 44px;
   }
 }
@@ -130,9 +132,14 @@
     top: auto;
     left: 50%;
     bottom: 0;
+    background-color: #ffffff;
     transform: translate(-50%, 50%);
     white-space: nowrap;
     padding: 8px;
+  }
+
+  @include desktop {
+    background-color: #f2f2f2;
   }
 }
 
@@ -245,6 +252,7 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted rgba(#000000, 0.4);
+    background-color: #f2f2f2;
 
     &:hover {
       border-bottom: 1px solid rgba(#000000, 0.4);

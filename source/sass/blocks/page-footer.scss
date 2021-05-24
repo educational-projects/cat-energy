@@ -24,6 +24,14 @@
   }
 }
 
+.page-footer__map iframe {
+  width: 100%;
+
+  @include tablet {
+    height: 400px;
+  }
+}
+
 .icon-cat-enyrgy {
   margin-bottom: 30px;
 
