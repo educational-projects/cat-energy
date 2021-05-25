@@ -47,6 +47,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 43px;
+    max-width: 500px;
+  }
+
+  @include desktop {
+    max-width: 600px;
   }
 }
 
