@@ -12,17 +12,8 @@
   }
 
   @include desktop {
-    background-image: url("../img/intro/index-can-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-size: 552px 499px;
-    background-position: 63% 13px;
-    position: relative;
-    padding-bottom: 165px;
-    margin-bottom: 82px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro/index-can-desktop@2x.png");
-    }
+    background-image: none;
+    padding-bottom: 0;
   }
 }
 
@@ -48,10 +39,11 @@
 
   @include desktop {
     background-image: url("../img/intro/index-background-desktop@1x.jpg");
-    background-size: 720px 694px;
+    background-size: cover;
+    background-position: center;
     position: absolute;
-    min-height: 720px;
-    top: -128px;
+    min-height: 695px;
+    top: 0;
     right: 0;
     width: 50%;
 
@@ -66,6 +58,17 @@
 
   @include desktop {
     position: relative;
+      background-image: url("../img/intro/index-can-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-size: 552px 499px;
+      background-position: 63% 13px;
+      position: relative;
+      padding-bottom: 165px;
+      margin-bottom: 82px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/intro/index-can-desktop@2x.png");
+    }
   }
 }
 

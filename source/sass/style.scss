@@ -1,9 +1,9 @@
 //global
 
-@import "global/variables";
-@import "global/global";
-@import "global/fonts";
-@import "global/mixins";
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
 
 // Blocks
 
@@ -28,4 +28,5 @@
 @import "blocks/comment.scss";
 @import "blocks/additional.scss";
 @import "blocks/parametres.scss";
-@import "blocks/partners.scss"
+@import "blocks/partners.scss";
+@import "blocks/map.scss";

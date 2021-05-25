@@ -1,17 +1,5 @@
 .address {
-  padding: 27px 20px 25px;
-
-  @include tablet {
-    padding: 67px 71px 59px;
-  }
-
-  @include desktop {
-    position: absolute;
-    top: 97px;
-    left: 110px;
-    padding: 66px 78px 58px 76px;
-    background-color: #ffffff;
-  }
+  background-color: #f2f2f2;
 }
 
 .address--white-background {
@@ -19,11 +7,27 @@
 }
 
 .address__wrapper {
-  display: flex;
-  justify-content: space-between;
+  @include container;
 
   @include desktop {
-    padding: 0;
+    position: relative;
+  }
+}
+
+.address__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0 27px;
+
+  @include tablet {
+    padding: 66px 41px 61px;
+  }
+
+  @include desktop {
+    background-color: #ffffff;
+    position: absolute;
+    top: 95px;
+    padding: 67px 77px 59px;
   }
 }
 

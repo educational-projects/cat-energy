@@ -195,6 +195,7 @@
 .product__title {
   @include reset-indents;
   @include font-weight-normal;
+  text-decoration: none;
   display: inline-block;
   font-size: 16px;
   line-height: 20px;
