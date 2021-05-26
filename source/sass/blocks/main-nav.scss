@@ -2,10 +2,16 @@
   display: none;
 }
 
+.main-nav--closed .main-nav__list {
+  @include mobile-only {
+    display: none;
+  }
+}
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -3px;
   right: 0;
   width: 24px;
   height: 2px;
@@ -19,7 +25,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: 7px;
     left: 0;
     width: 25px;
     height: 2px;
@@ -94,7 +100,7 @@
 }
 
 .main-nav--white-link .main-nav__item--current {
-  @include tablet {
+  @include desktop {
     border-bottom: 2px solid #ffffff;
   }
 }
@@ -102,12 +108,11 @@
 .main-nav__toggle {
   position: absolute;
   right: 20px;
-  top: 31px;
+  top: 23px;
   width: 24px;
   height: 16px;
-  display: block;
   border: none;
-  background-color: white;
+  background-color: transparent;
   outline: none;
 
   @include tablet {
